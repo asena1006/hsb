@@ -4,14 +4,6 @@
   font-family: 'IBM Plex Sans KR', sans-serif;
 }
 
-.float-wrap {
-  font-size: 1rem;
-  background-color: var(--color--yellow);
-  overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .maintitle {
   overflow: hidden;
 }
@@ -50,3 +42,12 @@
   margin-left: 15rem;
   margin-right: 15rem;
 }
+
+.dtierlist {
+  margin-bottom: 5rem;
+}
+
+.onetier {
+  border: 2px solid red;
+}
+
