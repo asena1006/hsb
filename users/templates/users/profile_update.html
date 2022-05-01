@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div style="margin-top: 5rem !important;">
+        <div class="col-12">
+
+            <div class="row justify-content-center">
+                <div class="card">
+                    <div class="card-header" style="padding-bottom:8px;">
+                        <strong style="font-size: 18px; font-family: 'IBM Plex Sans KR', sans-serif;"><i class="fas fa-user-edit"></i>&nbsp;&nbsp;내 정보수정</strong>
+                    </div>
+                    <div class="card-body">
+                        <form method="POST">
+                            {% csrf_token %}
+
+                            <table style="color:white;">
+                                <tr>
+                                    <td class="profile_title">아이디</td>
+                                    {% if user.level == '0'%}
+                                    <td class="profile_content">&nbsp;&nbsp;{{ user.user_id }}&nbsp;&nbsp;(개발자)</td>
+                                    {% elif user.level == '1' %}
+                                    <td class="profile_content">&nbsp;&nbsp;{{ user.user_id }}&nbsp;&nbsp;(관리자)</td>
+                                    {% else %}
+                                    <td class="profile_content">&nbsp;&nbsp;{{ user.user_id }}</td>
+                                    {% endif %}
+                                </tr>
+
+
+                                <tr>
+                                    <td class="profile_title">이메일</td>
+                                    <td class="profile_content">&nbsp;&nbsp;{{ user.email }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="profile_title">이름/닉네임</td>
+                                    <td class="profile_content">{{ user_change_form.name }}</td>
+                                </tr>
+                                <tr>
+                            </table>
+
+                            <br>
+                            <div style="text-align: center;">
+                                <a onclick="location.href='/users/profile/'" class="btn btn-dark" id="back_btn"><i class="fa fa-reply"></i>&nbsp;돌아가기</a>
+                                <button type="submit" class="btn btn-info" id="detail_btn"><i class="fas fa-check"></i>&nbsp;수정하기</button>
+                            </div>
+                        </form>
+
+                        <script type = "text/javascript">
+                            function maxLengthCheck(object){
+                                if (object.value.length > object.maxLength) {
+                                    object.value = object.value.slice(0, object.maxLength);
+                                    }
+                                }
+                        </script>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
