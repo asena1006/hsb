@@ -60,7 +60,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'users.apps.UsersConfig',
-
+    'notice.apps.NoticeConfig',
+    'free.apps.FreeConfig',
+    'django.contrib.humanize',
+    'tierlist',
+    'info',
 ]
 
 MIDDLEWARE = [
@@ -169,3 +173,6 @@ DEFAULT_FROM_MAIL = my_settings.EMAIL['DEFAULT_FROM_MAIL']
 
 
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

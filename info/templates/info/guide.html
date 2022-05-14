@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="container">
+      <div class="dtierlist">
+          <img src="/static/images/guide.png" class="img-fluid" alt="..." />
+
+      </div>
+      <div class="buttoncollapse" style="margin-bottom: 1rem">
+
+
+
+      </div>
+
+      <div class="card mb-4">
+        <div class="card-body">
+          <h4 style="font-family: 'IBM Plex Sans KR', sans-serif">[토큰 하수인이란?]</h4>
+          <div style="margin-bottom: 2rem;">
+            <img src="/static/images/guide/token/one.png" alt=""  class="infoimg"/>
+            <img src="/static/images/guide/token/two.png" alt=""  class="infoimg"/>
+                <img src="/static/images/guide/token/thr.png" alt=""  class="infoimg"/>
+
+            </div>
+<h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[설명]</h5>
+            <p> 현재 토큰 하수인은 길고양이, 소라수집가, 판다네 정령이 있습니다.</p>
+            <p> 여러가지로 활용이 좋은 하수인입니다.</p>
+          <hr />
+            <h4 style="font-family: 'IBM Plex Sans KR', sans-serif">[전투의함성, 죽음의메아리, 복수, 주문제작이란?]</h4>
+          <div style="margin-bottom: 2rem;">
+            <img src="/static/images/guide/all/one.png" alt=""  class="infoimg"/>
+            <img src="/static/images/guide/all/two.png" alt=""  class="infoimg"/>
+                <img src="/static/images/guide/all/thr.png" alt=""  class="infoimg"/>
+              <img src="/static/images/guide/all/four.png" alt=""  class="infoimg"/>
+
+            </div>
+<h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[설명]</h5>
+            <p> -전투의 함성 :  손에서 낼때 발동합니다 (브란이 있으면 2번 발동 가능)</p>
+            <p> -죽음의 메아리 :  하수인이 죽을 때 발동합니다 (리븐데어가 있으면 2번 발동 가능)</p>
+            <p> -복수 :  전투 중 아군 하수인이 죽을때 마다 카운트 됩니다 (복수 1 = 아군 하수인 1 죽음)</p>
+            <p> -주문제작 :  특정 주문을 제작하여 내 손으로 가져옵니다.</p>
+            <hr />
+            <h4 style="font-family: 'IBM Plex Sans KR', sans-serif">[마나커브란?]</h4>
+          <div style="margin-bottom: 2rem;">
+            <h5 style="margin-top: 2rem;">[정석 마나커브]</h5>
+              <p> ▶ 1턴 (3마나) : 하수인 구매  </p>
+          <p> ▶ 2턴 (4마나) : 레벨업 </p>
+          <p> ▶ 3턴 (5마나) : 하수인 구매 + (토큰 하수인 있다면 팔고 사기)  </p>
+          <p> ▶ 4턴 (6마나) : 하수인 구매 + 하수인 구매 </p>
+          <p> ▶ 5턴 (7마나) : 레벨업 + 하수인 구매  </p>
+          <p> ▶ 6턴 (8마나) : 하수인 구매 + 하수인 구매</p>
+          <p> ▶ 7턴 (9마나) : 레벨업 + 하수인 구매  </p>
+              <p> 정석적인 마나커브 입니다.</p>
+
+                 <h5 style="margin-top: 2rem;">[1렙 롤]</h5>
+              <p> ▶ 1턴 (3마나) : 하수인 구매  </p>
+          <p> ▶ 2턴 (4마나) : 하수인 구매 </p>
+          <p> ▶ 3턴 (5마나) : 하수인 구매 + (토큰 하수인 있다면 팔고 사기)  </p>
+          <p> ▶ 4턴 (6마나) : 하수인 구매 + 하수인 구매 </p>
+          <p> ▶ 5턴 (7마나) : 레벨업 + 레벨업 (하수인 하나 판매)  </p>
+              <p>4렙 발견을 빠르게 볼 수 있습니다.</p>
+
+                <h5 style="margin-top: 2rem;">[라팜 마나커브]</h5>
+              <p> ▶ 1턴 (3마나) : 하수인 구매  </p>
+          <p> ▶ 2턴 (4마나) : 하수인 구매 + 영웅능력 </p>
+          <p> ▶ 3턴 (5마나) : 하수인 구매 + 영웅능력  </p>
+          <p> ▶ 4턴 (6마나) : 하수인 구매 + 하수인 구매 </p>
+          <p> ▶ 5턴 (7마나) : 레벨업 + 하수인 구매 + 영웅능력  </p>
+               <p> ▶ 6턴 (8마나) : 레벨업 + 영웅능력</p>
+          <p> ▶ 7턴 (9마나) : 레벨업 + 영웅능력 </p>
+              <p> 영웅능력의 비용이 1인 영웅이 주로 이용합니다</p>
+
+              <h5 style="margin-top: 2rem;">[패스트 레벨업]</h5>
+              <p> ▶ 1턴 (3마나) : 하수인 구매  </p>
+          <p> ▶ 2턴 (4마나) : 레벨업 </p>
+          <p> ▶ 3턴 (5마나) : 하수인 판매 + 레벨업  </p>
+          <p> ▶ 4턴 (6마나) : 하수인 구매 + 하수인 구매 </p>
+          <p> ▶ 5턴 (7마나) : 하수인 구매 + 하수인 구매  </p>
+               <p> ▶ 6턴 (8마나) : 레벨업 + 하수인 구매</p>
+          <p> ▶ 7턴 (9마나) :하수인 구매 + 하수인 구매 </p>
+              <p> 돌풍날개, 이세라가 주로 사용하는 패스트 레벨업 입니다.</p>
+
+
+
+
+        </div>
+      </div>
+
+    </section>
+
+{% endblock %}

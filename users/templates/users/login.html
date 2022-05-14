@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% if not user.is_authenticated %}
+<section class="container">
+      <div class="col-md-6 mb-4 loginform" style="margin-right:auto; margin-left:auto; margin-top:5rem;">
+        <form method="POST" action="." novalidate>
+                        {% csrf_token %}
+
+                        <div class="mb-4 md-form">
+                            <label name="label_user_id" for="{{ form.user_id.id_for_label }}"><i class="fas fa-user"></i>&nbsp;&nbsp;{{ form.user_id.label }}</label>
+                            {{ form.user_id }}
+                            <script type="text/javascript">
+                                if (document.getElementsByName('user_id')[0].value != '') {
+                                    document.getElementsByName('label_user_id')[0].setAttribute('class', 'active');
+                                }
+                            </script>
+                            {% if form.user_id.errors %}
+                            <script type="text/javascript">
+                                document.getElementsByName('user_id')[0].setAttribute('class',
+                                    'form-control is-invalid')
+                            </script>
+                            {% for error in form.user_id.errors %}
+                            <div class="invalid-feedback">
+                                {{ error }}
+                            </div>
+                            {% endfor %}
+                            {% endif %}
+                        </div>
+
+                        <div class="mb-4 md-form">
+                            <label for="{{ form.password.id_for_label }}"><i class="fas fa-lock"></i>&nbsp;&nbsp;{{ form.password.label }}</label>
+                            {{ form.password }}
+
+                            {% if form.password.errors %}
+                            <script type="text/javascript">
+                                document.getElementsByName('password')[0].setAttribute('class', 'form-control is-invalid')
+                            </script>
+                            {% for error in form.password.errors %}
+                            <div class="invalid-feedback">
+                                {{ error }}
+                            </div>
+                            {% endfor %}
+                            {% endif %}
+                        </div>
+
+                        <!-- {{ login_form }} -->
+                        <label style="margin-bottom: 2rem;">
+                            <input type="checkbox" name="remember_session"/>
+                            <span style="padding-bottom: 35px;">로그인 상태 유지</span>
+                        </label>
+                        <br>
+                        <!-- <input type="checkbox" name="remember_session" > 로그인 상태 유지<br><br> -->
+
+                        <button type="submit" style="opacity: 90%; font-size: 16px; margin-top: -5px;" class="btn btn-dark btn-lg btn-block">로그인</button>
+                    </form>
+           <div style="text-align: center;">
+                        <a style="color:gray; font-size: 14px;" href="{% url 'users:recovery_id' %}">아이디 찾기</a>&nbsp;&middot;
+                        <a style="color:gray; font-size: 14px;" href="{% url 'users:recovery_pw' %}">비밀번호찾기</a>&nbsp;&middot;
+                        <a style="color:gray; font-size: 14px;" href="{% url 'users:agreement' %}">회원가입</a>
+
+                    </div>
+
+      </div>
+    </section>
+{% else %}
+<section class="border p-4 text-center mb-4 bg-light">
+
+
+              <div
+                class="modal"
+                tabindex="-1"
+                style="position: static; display: block; height: auto"
+                data-gtm-vis-first-on-screen-2340190_1302="6684"
+                data-gtm-vis-total-visible-time-2340190_1302="100"
+                data-gtm-vis-has-fired-2340190_1302="1"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">로그인 안내</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-mdb-dismiss="modal"
+                        aria-label="Close"
+                        onclick="history.back();"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>이미 로그인 중입니다.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-mdb-dismiss="modal"
+                        onclick="history.back();"
+                      >
+                        닫기
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+{% endif %}
+
+{% endblock %}
+
+
+

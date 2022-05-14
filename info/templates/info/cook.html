@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="container">
+      <div class="dtierlist">
+
+      </div>
+      <div class="buttoncollapse" style="margin-bottom: 1rem">
+        <button
+          type="button"
+          class="btn btn-danger btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          1티어
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          나가
+        </button>
+          <button
+          type="button"
+          class="btn btn-success btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          야수
+        </button>
+
+      </div>
+
+      <div class="card mb-4">
+        <div class="card-body">
+          <h4 style="font-family: 'IBM Plex Sans KR', sans-serif">[요리사 쿠키]</h4>
+          <img src="/static/images/heros/cook/hero.png" alt="" style="width: 4rem" />
+            <img src="/static/images/heros/cook/power.png" alt="" style="width: 4rem" />
+
+
+            <div>
+              <div style="font-size: 15px; margin-top: 2rem; ">[영웅 능력] <br> 하수인 내 솥 안에 집어 넣습니다. <br> 셋을 집어넣으면, 넣은 종족의 하수인을 <br> 발견합니다. <br></div>
+
+
+            </div>
+
+          <hr />
+          <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[소개]</h5>
+            <p>종족 하수인 셋을 넣어 재료가 된 하수인의 종족 하수인을 발견합니다.</p>
+            <p>선술집 구매 목록에 있는 하수인 중 넣으면 됩니다.</p>
+            <p>나가 / 야수 / 가시멧돼지 중 하나의 종족으로 가는 것이 좋습니다. </p>
+            <hr />
+            <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[핵심하수인 - 나가]</h5>
+            <div style="margin-bottom: 2rem;">
+            <img src="/static/images/heros/cook/info/one.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/cook/info/two.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/cook/info/thr.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/cook/info/our.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/cook/info/f.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/cook/info/s.png" alt="" s class="infoimg"/>
+            </div>
+          <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[핵심하수인 - 야수]</h5>
+          <img src="/static/images/heros/cook/info/bone.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/cook/info/btwo.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/cook/info/bthr.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/cook/info/bfour.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/cook/info/bfive.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/cook/info/bsix.png" alt="" s class="infoimg"/>
+
+
+          <hr />
+          <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[운영법]</h5>
+          <p> ▶ 1턴 (3마나) : 하수인 구매 + 영능 사용1 </p>
+          <p> ▶ 2턴 (4마나) : 레벨업 + 영능 사용2 </p>
+          <p> ▶ 3턴 (5마나) : 하수인 구매 / 팔기(토큰/동전 팔기) + 하수인 구매 + 영능 사용3</p>
+          <p> ▶ 4턴 (6마나) : 하수인 구매 + 하수인 구매 +영능 사용1 </p>
+          <p> ▶ 5턴 (7마나) : 레벨업 + 하수인 구매 영능 사용2 </p>
+          <p> ▶ 6턴 (8마나) : 레벨업 + 영능 사용3 (레벨업 후 영능) </p>
+          <p> ▶ 7턴 (9마나) : 하수인 구매 + 하수인 구매 + 하수인 구매 </p>
+          <br>
+          <p> 매 턴 마다 영능을 사용하며 정석 레벨업 커브를 밟아줍니다.  </p>
+          <p> 7턴 이후에 영능 발견 타이밍에 맞춰 레벨업 + 발견 해줍니다. </p>
+
+        </div>
+      </div>
+    </section>
+
+{% endblock %}

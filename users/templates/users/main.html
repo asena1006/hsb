@@ -4,10 +4,18 @@
 
  <section class="container">
       <div class="dtierlist">
-        <img src="/static/images/tierlist.png" class="img-fluid" alt="..." />
+        <img src="/static/images/main.png" class="img-fluid" alt="..." />
       </div>
 
-      <div class="card mb-4">
+
+<div class="searchBox">
+      <label>영웅 찾기 : <input type="text" id="search" onkeyup="filter()" placeholder="영웅 이름을 검색하세요." /></label>
+
+    </div>
+
+<br/><br/>
+
+    <div class="card mb-4 listInner">
         <div class="card-body">
           <div class="corebox">
             <span class="tierbutton">
@@ -15,15 +23,3409 @@
                 type="button"
                 class="btn btn-danger btn-rounded"
                 data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
               >
                 1티어
               </button>
             </span>
             <div class="herolist">
               <img
+                src="/static/images/heros/ezshra/hero.png"
+                class="heroimg"
+                alt="여왕 이즈샤라"
+              />
+              <img
+                src="/static/images/heros/ezshra/powerone.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">여왕 이즈샤라</span>
+            <span class="type">
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/ezshra/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/ezshra/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/ezshra/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/ezshra/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/ezshra/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/ezshra/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:ezshra' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-danger btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                1티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/cook/hero.png"
+                class="heroimg"
+                alt="쿠키"
+              />
+              <img
+                src="/static/images/heros/cook/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">요리사 쿠키</span>
+            <span class="type">
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/beast.png" class="smallimg" alt="야수" />
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/cook/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/cook/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/cook/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/cook/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/cook/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/cook/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:cook' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-danger btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                1티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/mukla/hero.png"
+                class="heroimg"
+                alt="무클라"
+              />
+              <img
+                src="/static/images/heros/mukla/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">밀림의 왕 무클라</span>
+            <span class="type">
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/mech.png" class="smallimg" alt="기계" />
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/mukla/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/mukla/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/mukla/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/mukla/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/mukla/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/mukla/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:mukla' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-danger btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                1티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/mutanus/hero.png"
+                class="heroimg"
+                alt="무타누스"
+              />
+              <img
+                src="/static/images/heros/mutanus/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">걸신들린 무타누스</span>
+            <span class="type">
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/mech.png" class="smallimg" alt="기계" />
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/mutanus/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/mutanus/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/mutanus/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/mutanus/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/mutanus/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/mutanus/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:mutanus' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-danger btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                1티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/tess/hero.png"
+                class="heroimg"
+                alt="테스"
+              />
+              <img
+                src="/static/images/heros/tess/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">테스 그레이메인</span>
+            <span class="type">
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/tess/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/tess/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/tess/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/tess/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/tess/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/tess/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:tess' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-danger btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                1티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/galewing/hero.png"
+                class="heroimg"
+                alt="돌풍날개"
+              />
+              <img
+                src="/static/images/heros/galewing/powertwo.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">돌풍날개</span>
+            <span class="type">
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/boar.png" class="smallimg" alt="가멧" />
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/galewing/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/galewing/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/galewing/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/galewing/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/galewing/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/galewing/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:galewing' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-danger btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                1티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/omu/hero.png"
+                class="heroimg"
+                alt="돌풍날개"
+              />
+              <img
+                src="/static/images/heros/omu/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">숲의 감시관 오무</span>
+            <span class="type">
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/omu/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/omu/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/omu/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/omu/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/omu/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/omu/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:omu' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-danger btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                1티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/scabbs/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/scabbs/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">스캡스 커터버터</span>
+            <span class="type">
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/scabbs/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/scabbs/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/scabbs/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:scabbs' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-warning btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                2티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/flurgl/hero.png"
+                class="heroimg"
+                alt="플러글"
+              />
+              <img
+                src="/static/images/heros/flurgl/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">곰팡이술사 플러글</span>
+            <span class="type">
+              <img src="/static/images/type/marlok.png" class="smallimg" alt="멀록" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/flurgl/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/flurgl/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/flurgl/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/flurgl/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/flurgl/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/flurgl/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:flurgl' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-warning btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                2티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/zephy/hero.png"
+                class="heroimg"
+                alt="제피르스"
+              />
+              <img
+                src="/static/images/heros/zephy/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">위대한 제피르스</span>
+            <span class="type">
+              <img src="/static/images/type/naga.png" class="smallimg" alt="멀록" />
+              <img src="/static/images/type/boar.png" class="smallimg" alt="가멧" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/zephy/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/zephy/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/zephy/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/zephy/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/zephy/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/zephy/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:zephy' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-warning btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                2티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/chenvala/hero.png"
+                class="heroimg"
+                alt="제피르스"
+              />
+              <img
+                src="/static/images/heros/chenvala/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">첸바라</span>
+            <span class="type">
+              <img src="/static/images/type/element.png" class="smallimg" alt="정령" />
+
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/chenvala/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/chenvala/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/chenvala/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/chenvala/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/chenvala/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/chenvala/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:chenvala' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-warning btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                2티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/maiev/hero.png"
+                class="heroimg"
+                alt="마이에브"
+              />
+              <img
+                src="/static/images/heros/maiev/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">마이에브 섀도송</span>
+            <span class="type">
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/pirate.png" class="smallimg" alt="해적" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/maiev/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/maiev/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/maiev/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/maiev/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/maiev/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/maiev/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:maiev' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-warning btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                2티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/gally/hero.png"
+                class="heroimg"
+                alt="gally"
+              />
+              <img
+                src="/static/images/heros/gally/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">무역왕 갤리윅스</span>
+            <span class="type">
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/element.png" class="smallimg" alt="정령" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/gally/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/gally/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/gally/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/gally/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/gally/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/gally/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:gally' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-warning btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                2티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/elise/hero.png"
+                class="heroimg"
+                alt="gally"
+              />
+              <img
+                src="/static/images/heros/elise/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">엘리스 스타시커</span>
+            <span class="type">
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/beast.png" class="smallimg" alt="야수" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/elise/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/elise/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/elise/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/elise/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/elise/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/elise/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:elise' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-warning btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                2티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/millhouse/hero.png"
+                class="heroimg"
+                alt="gally"
+              />
+              <img
+                src="/static/images/heros/millhouse/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">밀하우스 마나스톰</span>
+            <span class="type">
+
+              <img src="/static/images/type/element.png" class="smallimg" alt="정령" />
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/millhouse/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/millhouse/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/millhouse/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/millhouse/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/millhouse/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/millhouse/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:millhouse' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-warning btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                2티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/galakrond/hero.png"
+                class="heroimg"
+                alt="gally"
+              />
+              <img
+                src="/static/images/heros/galakrond/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">갈라크론드</span>
+            <span class="type">
+
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/mech.png" class="smallimg" alt="기계" />
+              <img src="/static/images/type/pirate.png" class="smallimg" alt="해적" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/galakrond/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/galakrond/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/galakrond/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/galakrond/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/galakrond/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/galakrond/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:galakrond' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-warning btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                2티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/toki/hero.png"
+                class="heroimg"
+                alt="gally"
+              />
+              <img
+                src="/static/images/heros/toki/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">무한의 토키</span>
+            <span class="type">
+
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/mech.png" class="smallimg" alt="기계" />
+              <img src="/static/images/type/pirate.png" class="smallimg" alt="해적" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/galakrond/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/galakrond/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/galakrond/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/galakrond/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/galakrond/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/galakrond/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:toki' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-warning btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                2티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/darkmoon/hero.png"
+                class="heroimg"
+                alt="gally"
+              />
+              <img
+                src="/static/images/heros/darkmoon/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">실라스 다크문</span>
+            <span class="type">
+
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+
+              <img src="/static/images/type/pirate.png" class="smallimg" alt="해적" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/darkmoon/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/darkmoon/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/darkmoon/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/darkmoon/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/darkmoon/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/darkmoon/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:darkmoon' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-warning btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                2티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/rafam/hero.png"
+                class="heroimg"
+                alt="gally"
+              />
+              <img
+                src="/static/images/heros/rafam/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">대악당 라팜</span>
+            <span class="type">
+
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+
+
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/darkmoon/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/darkmoon/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/darkmoon/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/darkmoon/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/darkmoon/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/darkmoon/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:rafam' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+<div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-warning btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                2티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/george/hero.png"
+                class="heroimg"
+                alt="gally"
+              />
+              <img
+                src="/static/images/heros/george/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">타락한 조지</span>
+            <span class="type">
+
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/mech.png" class="smallimg" alt="나가" />
+
+
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/george/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/george/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/george/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/george/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/george/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/george/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:george' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-warning btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                2티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/voljin/hero.png"
+                class="heroimg"
+                alt="무타누스"
+              />
+              <img
+                src="/static/images/heros/voljin/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">볼진</span>
+            <span class="type">
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/mech.png" class="smallimg" alt="기계" />
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/mutanus/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/mutanus/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/mutanus/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/mutanus/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/mutanus/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/mutanus/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:voljin' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-warning btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                2티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/xyrella/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/xyrella/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">자이렐라</span>
+            <span class="type">
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/scabbs/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/scabbs/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/scabbs/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:xyrella' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-warning btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                2티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/yoggsaron/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/yoggsaron/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">희망의 끝 요그사론</span>
+            <span class="type">
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/scabbs/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/scabbs/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/scabbs/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:yoggsaron' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-warning btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                2티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/eudora/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/eudora/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">선장 유도라</span>
+            <span class="type">
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/scabbs/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/scabbs/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/scabbs/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:eudora' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-warning btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                2티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/yshra/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/yshra/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">이샤라즈</span>
+            <span class="type">
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/scabbs/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/scabbs/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/scabbs/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:yshra' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-warning btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                2티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/hooktusk/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/hooktusk/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">선장 후크터스크</span>
+            <span class="type">
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/scabbs/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/scabbs/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/scabbs/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:hooktusk' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-warning btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                2티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/douck/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/douck/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">두억시니</span>
+            <span class="type">
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/douck/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/douck/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/douck/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/douck/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/douck/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/douck/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:douck' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-success btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                3티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/bran/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/bran/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">공룡조련사 브란</span>
+            <span class="type">
+              <img src="/static/images/type/marlok.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/bran/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/bran/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/bran/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/bran/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/bran/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/bran/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:bran' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-success btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                3티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/malygos/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/malygos/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">말리고스</span>
+            <span class="type">
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/scabbs/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/scabbs/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/scabbs/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:malygos' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-success btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                3티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/alakir/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/alakir/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">알아키르</span>
+            <span class="type">
+              <img src="/static/images/type/mech.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/boar.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/alakir/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/alakir/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/alakir/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/alakir/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:alakir' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-success btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                3티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/deryl/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/deryl/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">춤추는 다릴</span>
+            <span class="type">
+              <img src="/static/images/type/mech.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/boar.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/alakir/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/alakir/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/alakir/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/alakir/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:deryl' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-success btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                3티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/jaraxus/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/jaraxus/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">군주 자락서스</span>
+            <span class="type">
+              <img src="/static/images/type/demon.png" class="smallimg" alt="나가" />
+
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/jaraxus/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/jaraxus/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/jaraxus/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/jaraxus/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/jaraxus/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/jaraxus/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:jaraxus' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-success btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                3티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/faelin/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/faelin/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">사절 페이린</span>
+            <span class="type">
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/scabbs/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/scabbs/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/scabbs/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:faelin' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-success btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                3티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/dawngrasp/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/dawngrasp/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">바르덴 던그래스프</span>
+            <span class="type">
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/scabbs/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/scabbs/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/scabbs/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:dawngrasp' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-success btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                3티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/aranna/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/aranna/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">아라나 스타시커</span>
+            <span class="type">
+              <img src="/static/images/type/element.png" class="smallimg" alt="나가" />
+
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/aranna/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/aranna/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/aranna/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/aranna/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/aranna/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/aranna/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:aranna' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-success btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                3티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/tickatus/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/tickatus/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">티케투스</span>
+            <span class="type">
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/scabbs/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/scabbs/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/scabbs/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:tickatus' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-success btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                3티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/nzoth/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/nzoth/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">느조스</span>
+            <span class="type">
+              <img src="/static/images/type/beast.png" class="smallimg" alt="나가" />
+
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/nzoth/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/nzoth/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/nzoth/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/nzoth/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/nzoth/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/nzoth/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:nzoth' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-success btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                3티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/reno/hero.png"
+                class="heroimg"
+                alt="gally"
+              />
+              <img
+                src="/static/images/heros/reno/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">리노잭슨</span>
+            <span class="type">
+
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/mech.png" class="smallimg" alt="기계" />
+              <img src="/static/images/type/pirate.png" class="smallimg" alt="해적" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/galakrond/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/galakrond/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/galakrond/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/galakrond/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/galakrond/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/galakrond/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:reno' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-success btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                3티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/nozdormu/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/nozdormu/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">노즈도르무</span>
+            <span class="type">
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/scabbs/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/scabbs/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/scabbs/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:nozdormu' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-success btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                3티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/finley/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/finley/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">핀리 므르믈턴경</span>
+            <span class="type">
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/scabbs/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/scabbs/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/scabbs/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:finley' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-success btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                3티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/greybough/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/greybough/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">잿빛가지</span>
+            <span class="type">
+              <img src="/static/images/type/beast.png" class="smallimg" alt="나가" />
+
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/nzoth/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/nzoth/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/nzoth/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/nzoth/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/nzoth/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/nzoth/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:greybough' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+    <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-success btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                3티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/blackthorn/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/blackthorn/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">죽음예언자 블랙쏜</span>
+            <span class="type">
+              <img src="/static/images/type/boar.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/blackthorn/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/blackthorn/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/blackthorn/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/blackthorn/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/blackthorn/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/blackthorn/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:blackthorn' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-success btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                3티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/jandice/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/jandice/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">잔다이스 바로브</span>
+            <span class="type">
+              <img src="/static/images/type/beast.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/jandice/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/jandice/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/jandice/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/jandice/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/jandice/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/jandice/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:jandice' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+<div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-success btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                3티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/patches/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/patches/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">해적 패치스</span>
+            <span class="type">
+              <img src="/static/images/type/pirate.png" class="smallimg" alt="나가" />
+
+
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/patches/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/patches/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/patches/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/patches/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/patches/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                <img
+                  src="/static/images/heros/patches/coresix.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:patches' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-success btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                3티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
                 src="/static/images/heros/lnistormcoil/hero.png"
                 class="heroimg"
-                alt="스톰코일"
+                alt="스캡스"
               />
               <img
                 src="/static/images/heros/lnistormcoil/power.png"
@@ -35,15 +3437,16 @@
             <span class="card-text heroname">이니 스톰코일</span>
             <span class="type">
               <img src="/static/images/type/mech.png" class="smallimg" alt="기계" />
+
+
+
+
+
             </span>
 
             <span class="corelist">
               <span class="hasuin">
-                <img
-                  src="/static/images/heros/lnistormcoil/kanbu.png"
-                  class="smallimg"
-                  alt="깐부"
-                />
+
                 <img
                   src="/static/images/heros/lnistormcoil/coreone.png"
                   class="smallimg"
@@ -69,14 +3472,2670 @@
                   class="smallimg"
                   alt="추천5"
                 />
+                <img
+                  src="/static/images/heros/lnistormcoil/coresix.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+
               </span>
               <span class="morebutton">
-                <button type="button" class="btn btn-dark">자세히보기</button>
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:lnistormcoil' %}' ">자세히보기</button>
               </span>
             </span>
           </div>
         </div>
       </div>
+
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-success btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                3티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/sindragosa/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/sindragosa/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">신드라고사</span>
+            <span class="type">
+              <img src="/static/images/type/mech.png" class="smallimg" alt="기계" />
+
+
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/sindragosa/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/sindragosa/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/sindragosa/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/sindragosa/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/sindragosa/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                <img
+                  src="/static/images/heros/sindragosa/coresix.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:sindragosa' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-success btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                3티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/lichking/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/lichking/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">리치 왕</span>
+            <span class="type">
+              <img src="/static/images/type/beast.png" class="smallimg" alt="나가" />
+
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/nzoth/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/nzoth/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/nzoth/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/nzoth/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/nzoth/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/nzoth/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:lichking' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-success btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                3티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/akazam/hero.png"
+                class="heroimg"
+                alt="akazam"
+              />
+              <img
+                src="/static/images/heros/akazam/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">아카잠자락</span>
+            <span class="type">
+              <img src="/static/images/type/beast.png" class="smallimg" alt="야수" />
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/akazam/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/akazam/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/akazam/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/akazam/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/akazam/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                <img
+                  src="/static/images/heros/akazam/coresix.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:akazam' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-success btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                3티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/sunstrider/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/sunstrider/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">캘타스 선스트라이더</span>
+            <span class="type">
+              <img src="/static/images/type/mech.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/boar.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/alakir/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/alakir/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/alakir/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/alakir/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:sunstrider' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-success btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                3티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/brukan/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/brukan/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">브루칸</span>
+            <span class="type">
+              <img src="/static/images/type/mech.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/boar.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/alakir/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/alakir/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/alakir/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/alakir/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:brukan' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+    <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-success btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                3티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/barov/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/barov/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">군주 바로브</span>
+            <span class="type">
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/scabbs/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/scabbs/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/scabbs/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:barov' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-success btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                3티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/curator/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/curator/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">전시 관리인</span>
+            <span class="type">
+              <img src="/static/images/type/marlok.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/boar.png" class="smallimg" alt="나가" />
+
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/curator/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/curator/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/curator/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/curator/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/curator/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/curator/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:curator' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-success btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                3티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/yesera/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/yesera/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">이세라</span>
+            <span class="type">
+              <img src="/static/images/type/dragon.png" class="smallimg" alt="나가" />
+
+
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/alexstra/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/alexstra/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/alexstra/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/alexstra/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/alexstra/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/alexstra/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:yesera' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-success btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                3티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/kragg/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/kragg/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">하늘선장 크라그</span>
+            <span class="type">
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/scabbs/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/scabbs/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/scabbs/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:kragg' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+    <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-info btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                4티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/guff/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/guff/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">거프 룬토템</span>
+            <span class="type">
+              <img src="/static/images/type/mech.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/boar.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/alakir/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/alakir/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/alakir/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/alakir/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:guff' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-info btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                4티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/deathwing/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/deathwing/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">데스윙</span>
+            <span class="type">
+              <img src="/static/images/type/beast.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/mech.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/boar.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/alakir/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/alakir/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/alakir/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/alakir/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:deathwing' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-info btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                4티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/onyxia/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/onyxia/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">오닉시아</span>
+            <span class="type">
+
+              <img src="/static/images/type/mech.png" class="smallimg" alt="나가" />
+
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/onyxia/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/onyxia/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/onyxia/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/onyxia/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/onyxia/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/onyxia/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:onyxia' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-info btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                4티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/saurfang/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/saurfang/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">대군주 사울팽</span>
+            <span class="type">
+              <img src="/static/images/type/mech.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/boar.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/alakir/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/alakir/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/alakir/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/alakir/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:saurfang' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-info btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                4티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/kurtrus/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/kurtrus/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">쿨트러스 애쉬폴른</span>
+            <span class="type">
+              <img src="/static/images/type/mech.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/boar.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/alakir/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/alakir/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/alakir/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/alakir/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:kurtrus' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-info btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                4티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/tamsin/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/tamsin/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">탬신 롬</span>
+            <span class="type">
+              <img src="/static/images/type/mech.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/boar.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/alakir/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/alakir/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/alakir/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/alakir/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:tamsin' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-info btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                4티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/tavshi/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/tavshi/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">타비쉬 스톰파이크</span>
+            <span class="type">
+              <img src="/static/images/type/mech.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/boar.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/alakir/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/alakir/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/alakir/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/alakir/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:tavshi' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-info btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                4티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/pyramad/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/pyramad/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">피라마드</span>
+            <span class="type">
+              <img src="/static/images/type/mech.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/boar.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/alakir/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/alakir/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/alakir/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/alakir/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:pyramad' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-info btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                4티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/cariel/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/cariel/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">카리엘 롬</span>
+            <span class="type">
+              <img src="/static/images/type/mech.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/boar.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/alakir/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/alakir/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/alakir/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/alakir/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:cariel' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-info btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                4티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/rakanishu/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/rakanishu/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">라카니슈</span>
+            <span class="type">
+              <img src="/static/images/type/mech.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/boar.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/alakir/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/alakir/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/alakir/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/alakir/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:rakanishu' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-info btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                4티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/ragnaros/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/ragnaros/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">불의 군주 라그나로스</span>
+            <span class="type">
+              <img src="/static/images/type/mech.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/boar.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/alakir/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/alakir/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/alakir/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/alakir/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:ragnaros' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-info btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                4티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/vancleef/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/vancleef/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">에드윈 벤클리프</span>
+            <span class="type">
+              <img src="/static/images/type/mech.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/boar.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/alakir/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/alakir/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/alakir/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/alakir/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:vancleef' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+    <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-info btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                4티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/wagtoggle/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/wagtoggle/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">여왕 왜그토글</span>
+            <span class="type">
+
+              <img src="/static/images/type/boar.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/wagtoggle/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/wagtoggle/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/wagtoggle/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/wagtoggle/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/wagtoggle/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/wagtoggle/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:wagtoggle' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+
+<div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-info btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                4티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/AFkey/hero.png"
+                class="heroimg"
+                alt="AFkey"
+              />
+              <img
+                src="/static/images/heros/AFkey/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+
+            <span class="card-text heroname">AF케이</span>
+            <span class="type">
+              <img src="/static/images/type/mech.png" class="smallimg" alt="기계" />
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/AFkey/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/AFkey/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/AFkey/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/AFkey/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/AFkey/corefive.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                 <img
+                  src="/static/images/heros/AFkey/coresix.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:afkey' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-info btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                4티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/rat/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/rat/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">왕쥐</span>
+            <span class="type">
+
+              <img src="/static/images/type/boar.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/wagtoggle/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/wagtoggle/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/wagtoggle/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/wagtoggle/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/wagtoggle/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/wagtoggle/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:rat' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-info btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                4티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/lich/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/lich/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">리치 바즈하이알</span>
+            <span class="type">
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/scabbs/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/scabbs/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/scabbs/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:lich' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-info btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                4티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/millificent/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/millificent/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">밀리피센트 마나스톰</span>
+            <span class="type">
+              <img src="/static/images/type/mech.png" class="smallimg" alt="나가" />
+
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/alakir/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/alakir/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/alakir/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/alakir/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:millificent' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-secondary btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                5티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/biggles/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/biggles/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">비글스워스 씨</span>
+            <span class="type">
+              <img src="/static/images/type/naga.png" class="smallimg" alt="나가" />
+
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/scabbs/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/scabbs/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/scabbs/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/scabbs/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:biggles' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+
+
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-secondary btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                5티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/alexstra/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/alexstra/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">알렉스트라자</span>
+            <span class="type">
+              <img src="/static/images/type/dragon.png" class="smallimg" alt="나가" />
+
+
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/alexstra/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/alexstra/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/alexstra/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/alexstra/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/alexstra/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/alexstra/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:alexstra' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+<div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-secondary btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                5티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/ctun/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/ctun/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">크툰</span>
+            <span class="type">
+              <img src="/static/images/type/boar.png" class="smallimg" alt="나가" />
+
+
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/ctun/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/ctun/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/ctun/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/ctun/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/ctun/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/ctun/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:ctun' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-secondary btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                5티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/patchwerk/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/patchwerk/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">패치워크</span>
+            <span class="type">
+              <img src="/static/images/type/mech.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/boar.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/alakir/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/alakir/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/alakir/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/alakir/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:patchwerk' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-secondary btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                5티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/illidan/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/illidan/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">일리단 스톰레인지</span>
+            <span class="type">
+              <img src="/static/images/type/beast.png" class="smallimg" alt="나가" />
+
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/nzoth/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/nzoth/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/nzoth/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/nzoth/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/nzoth/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/nzoth/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:illidan' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-secondary btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                5티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/vandir/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/vandir/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">반다르 스톰파이크</span>
+            <span class="type">
+              <img src="/static/images/type/mech.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/boar.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/alakir/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/alakir/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/alakir/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/alakir/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:vandir' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-secondary btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                5티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/sneed/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/sneed/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">스니드</span>
+            <span class="type">
+              <img src="/static/images/type/beast.png" class="smallimg" alt="나가" />
+
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/nzoth/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/nzoth/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/nzoth/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/nzoth/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/nzoth/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/nzoth/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:sneed' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+   <div class="card mb-4 listInner">
+        <div class="card-body">
+          <div class="corebox">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-secondary btn-rounded"
+                data-mdb-ripple-color="dark"
+                onclick = "location.href = '{% url 'tierlist:tierlist' %}' "
+              >
+                5티어
+              </button>
+            </span>
+            <div class="herolist">
+              <img
+                src="/static/images/heros/drekthar/hero.png"
+                class="heroimg"
+                alt="스캡스"
+              />
+              <img
+                src="/static/images/heros/drekthar/power.png"
+                alt="영웅능력"
+                class="heroimg"
+              />
+            </div>
+
+            <span class="card-text heroname">드렉타르</span>
+            <span class="type">
+              <img src="/static/images/type/mech.png" class="smallimg" alt="나가" />
+              <img src="/static/images/type/boar.png" class="smallimg" alt="나가" />
+
+
+
+            </span>
+
+            <span class="corelist">
+              <span class="hasuin">
+
+                <img
+                  src="/static/images/heros/alakir/coreone.png"
+                  class="smallimg"
+                  alt="추천1"
+                />
+                <img
+                  src="/static/images/heros/alakir/coretwo.png"
+                  class="smallimg"
+                  alt="추천2"
+                />
+                <img
+                  src="/static/images/heros/alakir/corethr.png"
+                  class="smallimg"
+                  alt="추천3"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefour.png"
+                  class="smallimg"
+                  alt="추천4"
+                />
+                <img
+                  src="/static/images/heros/alakir/corefive.png"
+                  class="smallimg"
+                  alt="추천5"
+                />
+                 <img
+                  src="/static/images/heros/alakir/coresix.png"
+                  class="smallimg"
+                  alt="추천6"
+                />
+
+              </span>
+              <span class="morebutton">
+                <button type="button" class="btn btn-dark" onclick = "location.href = '{% url 'info:drekthar' %}' ">자세히보기</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+
+
     </section>
+<script>
+      function filter() {
+        let search = document.getElementById("search").value.toLowerCase();
+        let listInner = document.getElementsByClassName("listInner");
+
+        for (let i = 0; i < listInner.length; i++) {
+          city = listInner[i].getElementsByClassName("heroname");
+
+          if (city[0].innerHTML.toLowerCase().indexOf(search) != -1
+
+          ) {
+            listInner[i].style.display = "flex"
+          } else {
+            listInner[i].style.display = "none"
+          }
+        }
+      }
+
+    </script>
 
 {% endblock %}

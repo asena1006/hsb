@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="container">
+      <div class="dtierlist">
+
+      </div>
+      <div class="buttoncollapse" style="margin-bottom: 1rem">
+        <button
+          type="button"
+          class="btn btn-danger btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          1티어
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          나가
+        </button>
+
+      </div>
+
+      <div class="card mb-4">
+        <div class="card-body">
+          <h4 style="font-family: 'IBM Plex Sans KR', sans-serif">[숲의 감시관 오무]</h4>
+          <img src="/static/images/heros/omu/hero.png" alt="" style="width: 4rem" />
+            <img src="/static/images/heros/omu/power.png" alt="" style="width: 4rem" />
+
+
+            <div>
+              <div style="font-size: 15px; margin-top: 2rem; ">[영웅 능력] <br> 내가 밥의 선술집을 강화한 후에, <br> 이번 턴에만 2골드를 얻습니다.. <br>  </div>
+
+
+            </div>
+
+          <hr />
+          <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[소개]</h5>
+            <p>패스트 레벨 업에 특화된 영웅입니다.</p>
+            <p>레벨업을 하면 2골드를 주기 때문에 레벨업을 하며 하수인 구매 하기에 용이합니다..</p>
+            <p>빠른 레벨업을 통해 빠르게 고레벨 하수인을 모을 수 있지만 좋은 하수인이 안나오면 꼴등을 할 가능성도 높은 영웅입니다. </p>
+            <hr />
+            <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[핵심하수인]</h5>
+            <div style="margin-bottom: 2rem;">
+            <img src="/static/images/heros/tess/info/one.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/tess/info/two.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/tess/info/thr.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/tess/info/our.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/tess/info/f.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/tess/info/s.png" alt=""  class="infoimg"/>
+            </div>
+
+
+          <hr />
+          <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[운영법]</h5>
+          <p> ▶ 1턴 (3마나) : 하수인 구매(토큰) </p>
+          <p> ▶ 2턴 (4마나) : 레벨업 + 하수인 구매 (가능하다면) </p>
+          <p> ▶ 3턴 (5마나) : 하수인 구매  + 하수인 구매 (1성 하수인을 가지고 있다면 2성으로 업그레이드 가능)</p>
+          <p> ▶ 4턴 (6마나) : 레벨업 + 하수인 구매 </p>
+          <p> ▶ 5턴 (7마나) : 하수인 구매 + 새로고침 + 하수인 구매 </p>
+          <p> ▶ 6턴 (8마나) : 레벨업 + 하수인 구매 </p>
+          <p> ▶ 7턴 (9마나) : 레벨업 + 하수인 구매 </p>
+          <br>
+          <p> 빠른 레벨업을 하면서 영웅능력으로 하수인을 틈틈히 사주어 초반 단계에 데미지를 최소화 해야합니다.  </p>
+          <p> 용암 잠복꾼을 빠르게 찾고 필드를 강화하며 안정적으로 운영하고 빠르게 레벨업을 해줍니다. </p>
+          <p> 토큰 하수인에 따라 골드 활용을 유동적으로 할 수 있습니다. </p>
+
+        </div>
+      </div>
+    </section>
+
+{% endblock %}

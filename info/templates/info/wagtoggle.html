@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="container">
+      <div class="dtierlist">
+
+      </div>
+      <div class="buttoncollapse" style="margin-bottom: 1rem">
+        <button
+          type="button"
+          class="btn btn-info btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          4티어
+        </button>
+
+        <button
+          type="button"
+          class="btn btn-dark btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          혼합
+        </button>
+      </div>
+
+      <div class="card mb-4">
+        <div class="card-body">
+          <h4 style="font-family: 'IBM Plex Sans KR', sans-serif">[여왕 왜그토글]</h4>
+            <img src="/static/images/heros/wagtoggle/hero.png" alt="" style="width: 4rem" />
+            <img src="/static/images/heros/wagtoggle/power.png" alt="" style="width: 4rem" />
+
+            <div>
+              <div style="font-size: 15px; margin-top: 2rem; ">[영웅 능력] <br> 모든 아군 종족에게 각각 +1/+1을 부여합니다.</div>
+
+
+            </div>
+
+          <hr />
+          <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[소개]</h5>
+            <p>버프형 영웅입니다. 버프형 영웅은 우승하긴 어렵고 순방을 목표로 하는 경우가 많습니다.</p>
+            <p>모든 종족을 빠르게 모아주는 것이 중요합니다.</p>
+            <p> 4개 종족을 모은후 4레벨을 달성합니다..</p>
+
+            <hr />
+             <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[핵심하수인]</h5>
+            <div style="margin-bottom: 2rem;">
+            <img src="/static/images/type/mix/one.png" alt=""  class="infoimg"/>
+            <img src="/static/images/type/mix/two.png" alt=""  class="infoimg"/>
+                <img src="/static/images/type/mix/thr.png" alt=""  class="infoimg"/>
+                <img src="/static/images/type/mix/four.png" alt=""  class="infoimg"/>
+                <img src="/static/images/type/mix/five.png" alt=""  class="infoimg"/>
+                <img src="/static/images/type/mix/six.png" alt=""  class="infoimg"/>
+            </div>
+            <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[핵심하수인 - 쏜커스]</h5>
+            <div style="margin-bottom: 2rem;">
+            <img src="/static/images/type/boar/hone.png" alt=""  class="infoimg"/>
+            <img src="/static/images/type/boar/htwo.png" alt=""  class="infoimg"/>
+                <img src="/static/images/type/boar/hthr.png" alt=""  class="infoimg"/>
+                <img src="/static/images/type/boar/hfour.png" alt=""  class="infoimg"/>
+                <img src="/static/images/type/boar/hfive.png" alt=""  class="infoimg"/>
+                <img src="/static/images/type/boar/hsix.png" alt=""  class="infoimg"/>
+            </div>
+
+          <hr />
+          <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[운영법]</h5>
+          <p> ▶ 1턴 (3마나) : 하수인(종족1) 구매 </p>
+          <p> ▶ 2턴 (4마나) : 하수인(종족2) 구매 </p>
+          <p> ▶ 3턴 (5마나) : 하수인 구매(종족3) + 영웅능력 </p>
+          <p> ▶ 4턴 (6마나) : 하수인 구매(종족4) + 하수인 구매(종족5) </p>
+          <p> ▶ 5턴 (7마나) : 레벨업 +  레벨업(하수인 하나 판매) </p>
+             <p> ▶ 6턴 (8마나) : 레벨업 + 영웅능력 </p>
+             <p> ▶ 7턴 (9마나) : 레벨업 + 영웅능력 </p>
+
+          <p>  1렙 상점에서 서로다른 종족을 최대한 많이 모읍니다.  </p>
+          <p> 영웅능력으로 초반에 최대한 많은 하수인에게 버프를 준후 빠르게 5렙을 찍어 핵심 하수인을 찾습니다. </p>
+
+        </div>
+      </div>
+    </section>
+
+{% endblock %}

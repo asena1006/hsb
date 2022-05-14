@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="container">
+      <div class="dtierlist">
+
+      </div>
+      <div class="buttoncollapse" style="margin-bottom: 1rem">
+        <button
+          type="button"
+          class="btn btn-danger btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          1티어
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          나가
+        </button>
+          <button
+          type="button"
+          class="btn btn-info btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          기계
+        </button>
+          <button
+          type="button"
+          class="btn btn-warning btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          가시멧돼지
+        </button>
+
+      </div>
+
+      <div class="card mb-4">
+        <div class="card-body">
+          <h4 style="font-family: 'IBM Plex Sans KR', sans-serif">[밀림의 왕 무클라]</h4>
+          <img src="/static/images/heros/mukla/hero.png" alt="" style="width: 4rem" />
+            <img src="/static/images/heros/mukla/power.png" alt="" style="width: 4rem" />
+
+
+            <div>
+              <div style="font-size: 15px; margin-top: 2rem; ">[영웅 능력] <br> 바나나를 둘 가져옵니다. <br> 내 턴이 끝날 때, 다른 모든 플레이어에게 바나나를 줍니다. <br> 바나나는 +1/+1 or +2/+2 입니다.<br> </div>
+
+
+            </div>
+
+          <hr />
+          <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[소개]</h5>
+            <p>영웅 능력을 사용 하면 +1/+1 or +2/+2 바나나를 얻습니다.</p>
+            <p>바나나 자체가 스텟을 많이 올려주기 때문에 기계와 시너지가 잘맞고  </p>
+          <p>바나나가 주문이기 때문에 나가 종족의 어스름 투사와 시너지를 낼 수 있습니다.  </p>
+            <p>나가 / 기계,가시멧돼지 중 잘 나오는 종족에 따라 가는 것이 좋습니다. </p>
+            <hr />
+            <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[핵심하수인 - 나가]</h5>
+            <div style="margin-bottom: 2rem;">
+            <img src="/static/images/heros/mukla/info/one.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/mukla/info/two.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/mukla/info/thr.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/mukla/info/four.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/mukla/info/five.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/mukla/info/six.png" alt=""  class="infoimg"/>
+            </div>
+          <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[핵심하수인 - 기계,가시멧돼지]</h5>
+          <img src="/static/images/heros/mukla/info/mone.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/mukla/info/mtwo.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/mukla/info/mthr.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/mukla/info/mfour.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/mukla/info/mfive.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/mukla/info/msix.png" alt="" s class="infoimg"/>
+
+
+          <hr />
+          <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[운영법]</h5>
+          <p> ▶ 1턴 (3마나) : 하수인 구매 </p>
+          <p> ▶ 2턴 (4마나) : 레벨업  </p>
+          <p> ▶ 3턴 (5마나) : 하수인 구매 + 영능 사용(바나나 킵)</p>
+          <p> ▶ 4턴 (6마나) : 하수인 구매 + 하수인 구매  </p>
+          <p> ▶ 5턴 (7마나) : 레벨업 + 하수인 구매  </p>
+          <p> ▶ 6턴 (8마나) : 하수인 구매 + 하수인 구매 + 영능 사용(반사 로봇이 나온다면 바나나 사용) </p>
+          <p> ▶ 7턴 (9마나) : 레벨업 + 하수인 구매 or 하수인 구매 + 영웅능력 (기계로 간다면 하수인 구매, 나가 로 간다면 레벨업) </p>
+          <br>
+          <p> 정석 레벨업 커브를 밟아주면서 토큰 하수인이 나오거나 골드가 남는 경우 계속 영웅 능력을 사용해 줍니다.  </p>
+          <p> 나가 종족이 잘 나온다면 어수름 투사를 빠르게 뽑아 모아둔 바나나를 사용합니다 </p>
+
+        </div>
+      </div>
+    </section>
+
+{% endblock %}

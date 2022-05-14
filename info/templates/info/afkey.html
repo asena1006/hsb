@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="container">
+      <div class="dtierlist">
+
+      </div>
+      <div class="buttoncollapse" style="margin-bottom: 1rem">
+        <button
+          type="button"
+          class="btn btn-info btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          4티어
+        </button>
+        <button
+          type="button"
+          class="btn btn-info btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          기계
+        </button>
+        <button
+          type="button"
+          class="btn btn-warning btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          가시멧돼지
+        </button>
+        <button
+          type="button"
+          class="btn btn-dark btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          혼합
+        </button>
+      </div>
+
+      <div class="card mb-4">
+        <div class="card-body">
+          <h4 style="font-family: 'IBM Plex Sans KR', sans-serif">[AF케이]</h4>
+          <img src="/static/images/heros/AFkey/hero.png" alt="" style="width: 4rem" />
+            <img src="/static/images/heros/AFkey/power.png" alt="" style="width: 4rem" />
+
+            <div>
+              <div style="font-size: 15px; margin-top: 2rem; ">[영웅 능력] <br> 첫 2턴을 넘깁니다. <br> 3단계 하수인 둘을 보유하고 시작합니다.</div>
+
+
+            </div>
+
+          <hr />
+          <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[소개]</h5>
+            <p>기계와 가시멧돼지가 동시에 살았을때 고를만 한 영웅입니다.</p>
+            <p>영웅능력으로 발견하는 3단계 하수인이 중요하고 상황에 따라 기계 or 혼합 으로 구성하면 됩니다.</p>
+            <hr />
+            <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[핵심하수인 - 기계]</h5>
+            <div style="margin-bottom: 2rem;">
+            <img src="/static/images/heros/AFkey/info/bansa.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/AFkey/info/ze.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/AFkey/info/heol.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/AFkey/info/gi.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/AFkey/info/hi.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/AFkey/info/chun.png" alt="" s class="infoimg"/>
+            </div>
+            <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[핵심하수인 - 혼합]</h5>
+          <img src="/static/images/heros/AFkey/info/bansa.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/AFkey/info/pazi.png" alt=""  class="infoimg"/>
+          <img src="/static/images/heros/AFkey/info/chung.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/AFkey/info/heol.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/AFkey/info/thon.png" alt=""  class="infoimg"/>
+          <img src="/static/images/heros/AFkey/info/bic.png" alt="" class="infoimg"/>
+
+          <hr />
+          <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[운영법]</h5>
+          <p> ▶ 1턴 (3마나) : X (영웅능력으로 건너뜀) </p>
+          <p> ▶ 2턴 (4마나) : X (영웅능력으로 건너뜀) </p>
+          <p> ▶ 3턴 (5마나) : 영웅능력 발견 + 하수인 구매 후 팔기 + 레벨업 </p>
+          <p> ▶ 4턴 (6마나) : 하수인 구매 + 하수인 구매 </p>
+          <p> ▶ 5턴 (7마나) : 레벨업 + 하수인 판매 + 하수인 구매 </p>
+          <p> ▶ 6턴 (8마나) : 레벨업 + 하수인 판매 + 하수인 구매 </p>
+          <p> 이후 정상 마나커브로 운영하며 선술집 3레벨에서 핵심 하수인을 어느정도 찾고  </p>
+          <p> 선술집 4단계에서 5렙 발견으로 빛송곳니 집행자나/ 쏜커스를 찾는것이 좋습니다. </p>
+
+        </div>
+      </div>
+    </section>
+
+{% endblock %}

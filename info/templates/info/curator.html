@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="container">
+      <div class="dtierlist">
+
+      </div>
+      <div class="buttoncollapse" style="margin-bottom: 1rem">
+        <button
+          type="button"
+          class="btn btn-success btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          3티어
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          멀록
+        </button>
+          <button
+          type="button"
+          class="btn btn-dark btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          혼합
+        </button>
+          <button
+          type="button"
+          class="btn btn-warning btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          가시멧돼지
+        </button>
+
+      </div>
+
+      <div class="card mb-4">
+        <div class="card-body">
+          <h4 style="font-family: 'IBM Plex Sans KR', sans-serif">[전시 관리인]</h4>
+          <img src="/static/images/heros/curator/hero.png" alt="" style="width: 4rem" />
+            <img src="/static/images/heros/curator/power.png" alt="" style="width: 4rem" />
+
+
+            <div>
+              <div style="font-size: 15px; margin-top: 2rem; ">[영웅 능력] <br> 모든 종족값을 가진 2/2 융합체를 소환하고 게임을 시작합니다. <br>  </div>
+
+
+            </div>
+
+          <hr />
+          <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[소개]</h5>
+            <p>멀록 or 쏜커스 or 혼합으로 갈 수 있습니다.</p>
+            <p>필요로 하는 하수인이 많아 완성하기 까다롭습니다.</p>
+
+            <hr />
+            <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[핵심하수인 - 융합체에 좋은 하수인]</h5>
+            <div style="margin-bottom: 2rem;">
+            <img src="/static/images/heros/curator/info/coreone.png" alt=""  class="infoimg"/>
+           <img src="/static/images/heros/curator/info/coretwo.png" alt=""  class="infoimg"/>
+                <img src="/static/images/heros/curator/info/corethr.png" alt=""  class="infoimg"/>
+            </div>
+            <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[핵심하수인 - 멀록]</h5>
+            <div style="margin-bottom: 2rem;">
+            <img src="/static/images/type/marlok/one.png" alt=""  class="infoimg"/>
+            <img src="/static/images/type/marlok/two.png" alt=""  class="infoimg"/>
+                <img src="/static/images/type/marlok/thr.png" alt=""  class="infoimg"/>
+                <img src="/static/images/type/marlok/four.png" alt=""  class="infoimg"/>
+                <img src="/static/images/type/marlok/five.png" alt=""  class="infoimg"/>
+                <img src="/static/images/type/marlok/six.png" alt=""  class="infoimg"/>
+            </div>
+            <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[핵심하수인 - 쏜커스]</h5>
+            <div style="margin-bottom: 2rem;">
+            <img src="/static/images/type/boar/hone.png" alt=""  class="infoimg"/>
+            <img src="/static/images/type/boar/htwo.png" alt=""  class="infoimg"/>
+                <img src="/static/images/type/boar/hthr.png" alt=""  class="infoimg"/>
+                <img src="/static/images/type/boar/hfour.png" alt=""  class="infoimg"/>
+                <img src="/static/images/type/boar/hfive.png" alt=""  class="infoimg"/>
+                <img src="/static/images/type/boar/hsix.png" alt=""  class="infoimg"/>
+            </div>
+            <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[핵심하수인 - 혼합]</h5>
+            <div style="margin-bottom: 2rem;">
+            <img src="/static/images/type/mix/one.png" alt=""  class="infoimg"/>
+            <img src="/static/images/type/mix/two.png" alt=""  class="infoimg"/>
+                <img src="/static/images/type/mix/thr.png" alt=""  class="infoimg"/>
+                <img src="/static/images/type/mix/four.png" alt=""  class="infoimg"/>
+                <img src="/static/images/type/mix/five.png" alt=""  class="infoimg"/>
+                <img src="/static/images/type/mix/six.png" alt=""  class="infoimg"/>
+            </div>
+
+
+          <hr />
+          <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[운영법]</h5>
+          <p> ▶ 1턴 (3마나) : 하수인 구매 </p>
+          <p> ▶ 2턴 (4마나) : 레벨업 </p>
+          <p> ▶ 3턴 (5마나) : 하수인 구매  </p>
+          <p> ▶ 4턴 (6마나) : 하수인 구매 + 하수인 구매 </p>
+          <p> ▶ 5턴 (7마나) : 레벨업 + 하수인 구매 </p>
+          <p> ▶ 6턴 (8마나) : 하수인 구매 + 하수인 구매 </p>
+          <p> ▶ 7턴 (9마나) : 레벨업 + 하수인 구매 </p>
+          <br>
+          <p> 기본적으로 정석 마나커브를 타고 5렙발견을 보는것이 좋습니다.  </p>
+          <p> 5렙 발견에 따라 가는 덱이 달라지는데 브란 = 멀록, 빛송 = 혼합, 쏜커스 = 가멧혼합 이렇습니다. </p>
+          <p> 만약 모듈이 나온다면 융합체와 합쳐줍시다. </p>
+
+        </div>
+      </div>
+    </section>
+
+{% endblock %}

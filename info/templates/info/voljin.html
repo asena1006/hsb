@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="container">
+      <div class="dtierlist">
+
+      </div>
+      <div class="buttoncollapse" style="margin-bottom: 1rem">
+        <button
+          type="button"
+          class="btn btn-danger btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          1티어
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          나가
+        </button>
+          <button
+          type="button"
+          class="btn btn-info btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          기계
+        </button>
+          <button
+          type="button"
+          class="btn btn-warning btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          가시멧돼지
+        </button>
+
+      </div>
+
+      <div class="card mb-4">
+        <div class="card-body">
+          <h4 style="font-family: 'IBM Plex Sans KR', sans-serif">[볼진]</h4>
+          <img src="/static/images/heros/voljin/hero.png" alt="" style="width: 4rem" />
+            <img src="/static/images/heros/voljin/power.png" alt="" style="width: 4rem" />
+
+
+            <div>
+              <div style="font-size: 15px; margin-top: 2rem; ">[영웅 능력] <br> 하수인을 둘 선택합니다. <br>그 하수인들은 서로 능력치를 바꿉니다.  </div>
+
+
+            </div>
+
+          <hr />
+          <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[소개]</h5>
+            <p>영웅능력으로 선택한 두 하수인의 능력치를 바꿉니다.</p>
+            <p>영웅 능력의 특성상 오색날개로 시작한다면 높은 공격력을 비교적 쉽게 얻을 수 있습니다.  </p>
+          <p> 특정 기물(오색날개) 에 스탯을 크게 올린 후 핵심 하수인 (기계 or 나가) 로 옮기는 전략이 주요합니다. </p>
+          <p>나가 종족은 1턴 짜리 주문으로 올린 스텟을 그대로 옮길 수 있어서 많은 이점이 있습니다. 주력으로는 나가 입니다. </p>
+            <p>나가 / 기계,가시멧돼지 중 잘 나오는 종족에 따라 가는 것이 좋습니다. </p>
+            <hr />
+            <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[핵심하수인 - 나가]</h5>
+            <div style="margin-bottom: 2rem;">
+            <img src="/static/images/heros/mutanus/info/one.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/mutanus/info/two.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/mutanus/info/thr.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/mutanus/info/four.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/mutanus/info/five.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/mutanus/info/six.png" alt=""  class="infoimg"/>
+            </div>
+          <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[핵심하수인 - 오색날개]</h5>
+            <div style="margin-bottom: 2rem;">
+            <img src="/static/images/heros/mutanus/info/oh.png" alt=""  class="infoimg"/>
+
+            </div>
+          <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[핵심하수인 - 기계,가시멧돼지]</h5>
+          <img src="/static/images/heros/mutanus/info/mone.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/mutanus/info/mtwo.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/mutanus/info/mthr.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/mutanus/info/mfour.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/mutanus/info/mfive.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/mutanus/info/msix.png" alt="" s class="infoimg"/>
+
+
+          <hr />
+          <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[운영법]</h5>
+          <p> ▶ 1턴 (3마나) : 하수인 구매 (오색 날개 or 깡 스탯 높은 하수인 추천!) </p>
+          <p> ▶ 2턴 (4마나) : 레벨업  </p>
+          <p> ▶ 3턴 (5마나) : 하수인 구매 + 영능 사용 + 하수인 구매</p>
+          <p> ▶ 4턴 (6마나) : 하수인 구매 + 하수인 구매 / 오색날개 라면 레벨업 </p>
+          <p> ▶ 5턴 (7마나) : 레벨업 + 하수인 구매 / 오색날개 라면 반사로봇 + 토큰 하수인 구매  </p>
+          <p> ▶ 6턴 (8마나) : 하수인 구매 + 하수인 구매 + 영능 사용 / 오색날개 라면 레벨업 후 영웅능력  </p>
+          <p> ▶ 7턴 (9마나) : 레벨업 + 하수인 구매 or 하수인 구매 + 영웅능력 (기계로 간다면 하수인 구매, 나가 로 간다면 레벨업) </p>
+          <br>
+          <p> 기본 스텟이 충실한 하수인의 스텟을 바꿔주며 레벨업을 눌러줍니다.  </p>
+          <p> 처음부터 오색날개가 나오고 3레벨 타이밍에 반사로봇이 잘 나와준다면 기계로 갈만 하고  </p>
+          <p> 아니라면 정석 마나커브를 밟으며 나가 종족으로 가줍니다.  </p>
+          <p> 후반 부에 하수인에게 버프 주문을 몰아 바꾸는 방식으로 전투절단기 4000을 활용하면 좋습니다.  </p>
+
+        </div>
+      </div>
+    </section>
+
+{% endblock %}

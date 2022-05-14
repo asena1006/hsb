@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="container">
+      <div class="dtierlist">
+
+      </div>
+      <div class="buttoncollapse" style="margin-bottom: 1rem">
+        <button
+          type="button"
+          class="btn btn-danger btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          1티어
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          나가
+        </button>
+
+      </div>
+
+      <div class="card mb-4">
+        <div class="card-body">
+          <h4 style="font-family: 'IBM Plex Sans KR', sans-serif">[자이렐라]</h4>
+          <img src="/static/images/heros/xyrella/hero.png" alt="" style="width: 4rem" />
+            <img src="/static/images/heros/xyrella/power.png" alt="" style="width: 4rem" />
+
+
+            <div>
+              <div style="font-size: 15px; margin-top: 2rem; ">[영웅 능력] <br> 밥의 선술집에서 하수인을 선택해 내 손으로 가져옵니다 <br> 그 하수인의 능력치는 2/2가 됩니다. <br>  </div>
+
+
+            </div>
+
+          <hr />
+          <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[소개]</h5>
+            <p>2골드로 하수인을 가져오기 때문에 하수인 구매가 비교적 편합니다.</p>
+            <p>나오는 하수인에 따라 모든 종족이 가능하지만 현재는 나가가 성능이 좋습니다.</p>
+
+
+            <hr />
+            <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[핵심하수인]</h5>
+            <div style="margin-bottom: 2rem;">
+            <img src="/static/images/heros/tess/info/one.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/tess/info/two.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/tess/info/thr.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/tess/info/our.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/tess/info/f.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/tess/info/s.png" alt=""  class="infoimg"/>
+            </div>
+
+
+          <hr />
+          <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[운영법]</h5>
+          <p> ▶ 1턴 (3마나) : 하수인 구매 </p>
+          <p> ▶ 2턴 (4마나) : 레벨업 </p>
+          <p> ▶ 3턴 (5마나) : 하수인 구매 + 영웅능력 사용 </p>
+          <p> ▶ 4턴 (6마나) : 하수인 구매 + 하수인 구매 </p>
+          <p> ▶ 5턴 (7마나) : 레벨업 + 하수인 구매 </p>
+          <p> ▶ 6턴 (8마나) : 하수인 구매  + 하수인 구매 + 영웅능력 사용 </p>
+          <p> ▶ 7턴 (9마나) : 레벨업 + 영웅능력 사용 </p>
+          <br>
+          <p> 2골드로 하수인을 가져 올 수 있기 때문에 골드를 편하게 운영 할 수 있습니다.  </p>
+          <p> 나가 종족이 나온다면 계속 구매해 줍니다. </p>
+          <p> 레벨업과 하수인 구매는 골드 상황에 따라 유동적으로 가져갈 수 있습니다. </p>
+
+        </div>
+      </div>
+    </section>
+
+{% endblock %}

@@ -1,0 +1,1943 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+ <section class="container">
+      <div class="dtierlist">
+        <img src="/static/images/tierlist.png" class="img-fluid" alt="..." />
+      </div>
+      <div class="alert alert-primary" role="alert">
+        본 티어리스트는 해외 통계사이트를 참고하여 제작되었으며 주관적인 의견이 반영되어 실제 통계와는 차이가 있을 수
+        있습니다.
+      </div>
+      <div class="checkbox">
+        <span class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="boar"
+            checked=""
+          />
+          <label class="form-check-label" for="boars"> 가시멧돼지 </label>
+        </span>
+        <span class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="mech"
+            checked=""
+          />
+          <label class="form-check-label" for="mechs"> 기계 </label>
+        </span>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="demon"
+            checked=""
+          />
+          <label class="form-check-label" for="demons"> 악마 </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="beast"
+            checked=""
+          />
+          <label class="form-check-label" for="beasts"> 야수 </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="dragon"
+            checked=""
+          />
+          <label class="form-check-label" for="dragons"> 용족 </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="mulock"
+            checked=""
+          />
+          <label class="form-check-label" for="mulocks"> 멀록 </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="element"
+            checked=""
+          />
+          <label class="form-check-label" for="elements"> 정령 </label>
+        </div>
+        <div class="form-check mb-5">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="pirate"
+            checked=""
+          />
+
+          <label class="form-check-label" for="pirates"> 해적 </label>
+        </div>
+        <div class="form-check mb-5">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="naga"
+            checked=""
+          />
+
+          <label class="form-check-label" for="naga"> 나가 </label>
+        </div>
+      </div>
+      <div class="card mb-4">
+        <div class="card-body">
+          <span class="corebox" id="first">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-danger btn-rounded"
+                data-mdb-ripple-color="dark"
+              >
+                1티어
+              </button>
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="card mb-4">
+        <div class="card-body">
+          <span class="corebox" id="second">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-warning btn-rounded"
+                data-mdb-ripple-color="dark"
+              >
+                2티어
+              </button>
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="card mb-4">
+        <div class="card-body">
+          <span class="corebox" id="third">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-success btn-rounded"
+                data-mdb-ripple-color="dark"
+              >
+                3티어
+              </button>
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="card mb-4">
+        <div class="card-body">
+          <span class="corebox" id="four">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-info btn-rounded"
+                data-mdb-ripple-color="dark"
+              >
+                4티어
+              </button>
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="card mb-4">
+        <div class="card-body">
+          <span class="corebox" id="five">
+            <span class="tierbutton">
+              <button
+                type="button"
+                class="btn btn-secondary btn-rounded"
+                data-mdb-ripple-color="dark"
+              >
+                5티어
+              </button>
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="herocollapse">
+        <img
+          src="/static/images/heros/drekthar/hero.png"
+          class="herotierimg"
+          alt="드렉타르"
+          id="drekthar"
+          data-value="400"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="드렉타르"
+          onclick = "location.href = '{% url 'info:drekthar' %}' "
+        />
+        <img
+          src="/static/images/heros/sneed/hero.png"
+          class="herotierimg"
+          alt="스니드"
+          id="sneed"
+          data-value="250"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="스니드"
+          onclick = "location.href = '{% url 'info:sneed' %}' "
+        />
+        <img
+          src="/static/images/heros/vandir/hero.png"
+          class="herotierimg"
+          alt="반디르"
+          id="vandir"
+          data-value="300"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="반다르 스톰파이크"
+          onclick = "location.href = '{% url 'info:vandir' %}' "
+        />
+        <img
+          src="/static/images/heros/illidan/hero.png"
+          class="herotierimg"
+          alt="일리단"
+          id="illidan"
+          data-value="350"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="일리단 스톰레이지"
+          onclick = "location.href = '{% url 'info:illidan' %}' "
+        />
+        <img
+          src="/static/images/heros/yesera/hero.png"
+          class="herotierimg"
+          alt="이세라"
+          id="yesera"
+          data-value="1150"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="이세라"
+          onclick = "location.href = '{% url 'info:yesera' %}' "
+        />
+        <img
+          src="/static/images/heros/patchwerk/hero.png"
+          class="herotierimg"
+          alt="패치워크"
+          id="patchwerk"
+          data-value="400"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="패치워크"
+          onclick = "location.href = '{% url 'info:patchwerk' %}' "
+        />
+        <img
+          src="/static/images/heros/ctun/hero.png"
+          class="herotierimg"
+          alt="크툰"
+          id="ctun"
+          data-value="450"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="크툰"
+          onclick = "location.href = '{% url 'info:ctun' %}' "
+        />
+        <img
+          src="/static/images/heros/millificent/hero.png"
+          class="herotierimg"
+          alt="밀리피센트"
+          id="millificent"
+          data-value="550"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="밀리피센트 마나스톰"
+          onclick = "location.href = '{% url 'info:millificent' %}' "
+        />
+        <img
+          src="/static/images/heros/lich/hero.png"
+          class="herotierimg"
+          alt="리치"
+          id="lich"
+          data-value="600"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="리치 바즈하이알"
+          onclick = "location.href = '{% url 'info:lich' %}' "
+        />
+        <img
+          src="/static/images/heros/rat/hero.png"
+          class="herotierimg"
+          alt="왕쥐"
+          id="rat"
+          data-value="600"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="왕쥐"
+          onclick = "location.href = '{% url 'info:rat' %}' "
+        />
+        <img
+          src="/static/images/heros/eudora/hero.png"
+          class="herotierimg"
+          alt="유도라"
+          id="eudora"
+          data-value="1550"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="선장 유도라"
+          onclick = "location.href = '{% url 'info:eudora' %}' "
+        />
+        <img
+          src="/static/images/heros/AFkey/hero.png"
+          class="herotierimg"
+          alt="af케이"
+          id="AFkey"
+          data-value="750"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="A. F. 케이"
+          onclick = "location.href = '{% url 'info:rafam' %}' "
+        />
+        <img
+          src="/static/images/heros/wagtoggle/hero.png"
+          class="herotierimg"
+          alt="왜그토글"
+          id="wagtoggle"
+          data-value="750"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="여왕 왜그토글"
+          onclick = "location.href = '{% url 'info:wagtoggle' %}' "
+        />
+        <img
+          src="/static/images/heros/vancleef/hero.png"
+          class="herotierimg"
+          alt="벤클리프"
+          id="vancleef"
+          data-value="750"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="에드윈 밴클리프"
+          onclick = "location.href = '{% url 'info:vancleef' %}' "
+        />
+        <img
+          src="/static/images/heros/ragnaros/hero.png"
+          class="herotierimg"
+          alt="라그"
+          id="ragmaros"
+          data-value="750"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="불의 군주 라그나로스"
+          onclick = "location.href = '{% url 'info:ragnaros' %}' "
+        />
+        <img
+          src="/static/images/heros/rakanishu/hero.png"
+          class="herotierimg"
+          alt="라카니슈"
+          id="rakanishu"
+          data-value="750"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="라카니슈"
+          onclick = "location.href = '{% url 'info:rakanishu' %}' "
+        />
+        <img
+          src="/static/images/heros/cariel/hero.png"
+          class="herotierimg"
+          alt="카리엘"
+          id="cariel"
+          data-value="750"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="카리엘 롬"
+          onclick = "location.href = '{% url 'info:cariel' %}' "
+        />
+        <img
+          src="/static/images/heros/pyramad/hero.png"
+          class="herotierimg"
+          alt="피라마드"
+          id="pyramad"
+          data-value="800"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="피라마드"
+          onclick = "location.href = '{% url 'info:pyramad' %}' "
+        />
+        <img
+          src="/static/images/heros/tavshi/hero.png"
+          class="herotierimg"
+          alt="타비쉬"
+          id="tavshi"
+          data-value="850"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="타비쉬 스톰파이크"
+          onclick = "location.href = '{% url 'info:tavshi' %}' "
+        />
+        <img
+          src="/static/images/heros/tamsin/hero.png"
+          class="herotierimg"
+          alt="탬신 롬"
+          id="tamsin"
+          data-value="850"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="탬신 롬"
+          onclick = "location.href = '{% url 'info:tamsin' %}' "
+        />
+        <img
+          src="/static/images/heros/douck/hero.png"
+          class="herotierimg"
+          alt="두억시니"
+          id="douck"
+          data-value="1650"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="두억시니"
+          onclick = "location.href = '{% url 'info:douck' %}' "
+        />
+        <img
+          src="/static/images/heros/alexstra/hero.png"
+          class="herotierimg"
+          alt="알렉스트라자"
+          id="alexstra"
+          data-value="400"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="알렉스트라자"
+          onclick = "location.href = '{% url 'info:alexstra' %}' "
+        />
+        <img
+          src="/static/images/heros/curator/hero.png"
+          class="herotierimg"
+          alt="전시관리인"
+          id="curator"
+          data-value="1150"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="전시 관리인"
+          onclick = "location.href = '{% url 'info:curator' %}' "
+        />
+        <img
+          src="/static/images/heros/barov/hero.png"
+          class="herotierimg"
+          alt="바로브"
+          id="barov"
+          data-value="1150"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="군주 바로브"
+          onclick = "location.href = '{% url 'info:barov' %}' "
+        />
+        <img
+          src="/static/images/heros/hooktusk/hero.png"
+          class="herotierimg"
+          alt="후크더스크"
+          id="hooktusk"
+          data-value="1600"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="선장 후크더스크"
+          onclick = "location.href = '{% url 'info:hooktusk' %}' "
+          onclick = "location.href = '{% url 'info:rafam' %}' "
+        />
+        <img
+          src="/static/images/heros/kurtrus/hero.png"
+          class="herotierimg"
+          alt="쿨투러스"
+          id="kurtrus"
+          data-value="800"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="쿨트러스 애쉬폴른"
+          onclick = "location.href = '{% url 'info:kurtrus' %}' "
+        />
+        <img
+          src="/static/images/heros/brukan/hero.png"
+          class="herotierimg"
+          alt="브루칸"
+          id="brukan"
+          data-value="1150"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="브루칸"
+          onclick = "location.href = '{% url 'info:brukan' %}' "
+        />
+        <img
+          src="/static/images/heros/sunstrider/hero.png"
+          class="herotierimg"
+          alt="켈타스"
+          id="sunstrider"
+          data-value="1050"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="캘타스 선스트라이더"
+          onclick = "location.href = '{% url 'info:sunstrider' %}' "
+        />
+        <img
+          src="/static/images/heros/scabbs/hero.png"
+          class="herotierimg"
+          alt="스캡스"
+          id="scabbs"
+          data-value="2300"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="스캡스 커터버터"
+          onclick = "location.href = '{% url 'info:scabbs' %}' "
+        />
+        <img
+          src="/static/images/heros/saurfang/hero.png"
+          class="herotierimg"
+          alt="사울팽"
+          id="saurfang"
+          data-value="800"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="대군주 사울팽"
+          onclick = "location.href = '{% url 'info:saurfang' %}' "
+        />
+        <img
+          src="/static/images/heros/yshra/hero.png"
+          class="herotierimg"
+          alt="이샤라즈"
+          id="yshra"
+          data-value="1550"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="이샤라즈"
+          onclick = "location.href = '{% url 'info:yshra' %}' "
+        />
+        <img
+          src="/static/images/heros/akazam/hero.png"
+          class="herotierimg"
+          alt="아카잠자락"
+          id="akazam"
+          data-value="1100"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="위대한 아카잠자락"
+          onclick = "location.href = '{% url 'info:akazam' %}' "
+        />
+        <img
+          src="/static/images/heros/kragg/hero.png"
+          class="herotierimg"
+          alt="크라그"
+          id="kragg"
+          data-value="1150"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="하늘선장 크라그"
+          onclick = "location.href = '{% url 'info:kragg' %}' "
+        />
+        <img
+          src="/static/images/heros/lichking/hero.png"
+          class="herotierimg"
+          alt="리치왕"
+          id="lichking"
+          data-value="1150"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="리치 왕"
+          onclick = "location.href = '{% url 'info:lichking' %}' "
+        />
+        <img
+          src="/static/images/heros/yoggsaron/hero.png"
+          class="herotierimg"
+          alt="요그사론"
+          id="yoggsaron"
+          data-value="1550"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="희망의 끝 요그사론"
+          onclick = "location.href = '{% url 'info:yoggsaron' %}' "
+        />
+        <img
+          src="/static/images/heros/xyrella/hero.png"
+          class="herotierimg"
+          alt="자이렐라"
+          id="xyrella"
+          data-value="1700"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="자이렐라"
+          onclick = "location.href = '{% url 'info:xyrella' %}' "
+        />
+        <img
+          src="/static/images/heros/voljin/hero.png"
+          class="herotierimg"
+          alt="볼진"
+          id="voljin"
+          data-value="1650"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="볼진"
+          onclick = "location.href = '{% url 'info:voljin' %}' "
+        />
+        <img
+          src="/static/images/heros/sindragosa/hero.png"
+          class="herotierimg"
+          alt="신드라고사"
+          id="sindragosa"
+          data-value="1150"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="신드라고사"
+          onclick = "location.href = '{% url 'info:sindragosa' %}' "
+        />
+
+        <img
+          src="/static/images/heros/george/hero.png"
+          class="herotierimg"
+          alt="죠지"
+          id="george"
+          data-value="1550"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="타락한 조지"
+          onclick = "location.href = '{% url 'info:george' %}' "
+        />
+        <img
+          src="/static/images/heros/onyxia/hero.png"
+          class="herotierimg"
+          alt="오닉시아"
+          id="onyxia"
+          data-value="800"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="오닉시아"
+          onclick = "location.href = '{% url 'info:onyxia' %}' "
+        />
+        <img
+          src="/static/images/heros/lnistormcoil/hero.png"
+          class="herotierimg"
+          alt="이니 스톰코일"
+          id="lnistormcoil"
+          data-value="1250"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="이니 스톰코일"
+          onclick = "location.href = '{% url 'info:lnistormcoil' %}' "
+        />
+        <img
+          src="/static/images/heros/patches/hero.png"
+          class="herotierimg"
+          alt="해적 패치스"
+          id="patches"
+          data-value="1250"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="해적 패치스"
+          onclick = "location.href = '{% url 'info:patches' %}' "
+        />
+        <img
+          src="/static/images/heros/jandice/hero.png"
+          class="herotierimg"
+          alt="잔다이스"
+          id="jandice"
+          data-value="1250"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="잔다이스 바로브"
+          onclick = "location.href = '{% url 'info:jandice' %}' "
+        />
+        <img
+          src="/static/images/heros/blackthorn/hero.png"
+          class="herotierimg"
+          alt="블랙쏜"
+          id="blackthorn"
+          data-value="1300"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="블랙 쏜"
+          onclick = "location.href = '{% url 'info:blackthorn' %}' "
+        />
+        <img
+          src="/static/images/heros/deathwing/hero.png"
+          class="herotierimg"
+          alt="데스윙"
+          id="deathwing"
+          data-value="800"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="데스윙"
+          onclick = "location.href = '{% url 'info:deathwing' %}' "
+        />
+        <img
+          src="/static/images/heros/greybough/hero.png"
+          class="herotierimg"
+          alt="잿빛가지"
+          id="greybough"
+          data-value="1350"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="잿빛가지"
+          onclick = "location.href = '{% url 'info:greybough' %}' "
+        />
+        <img
+          src="/static/images/heros/finley/hero.png"
+          class="herotierimg"
+          alt="핀리"
+          id="finley"
+          data-value="1450"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="핀리 므르글턴경"
+          onclick = "location.href = '{% url 'info:finley' %}' "
+        />
+        <img
+          src="/static/images/heros/guyen/hero.png"
+          class="herotierimg"
+          alt="구옌"
+          id="guyen"
+          data-value="1550"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="스승 구옌"
+          onclick = "location.href = '{% url 'info:rafam' %}' "
+        />
+        <img
+          src="/static/images/heros/nozdormu/hero.png"
+          class="herotierimg"
+          alt="노즈도르무"
+          id="nozdormu"
+          data-value="1150"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="노즈도르무"
+          onclick = "location.href = '{% url 'info:nozdormu' %}' "
+        />
+        <img
+          src="/static/images/heros/reno/hero.png"
+          class="herotierimg"
+          alt="리노"
+          id="reno"
+          data-value="1450"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="리노 잭슨"
+          onclick = "location.href = '{% url 'info:reno' %}' "
+        />
+        <img
+          src="/static/images/heros/guff/hero.png"
+          class="herotierimg"
+          alt="거프"
+          id="guff"
+          data-value="800"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="거프 룬토템"
+          onclick = "location.href = '{% url 'info:guff' %}' "
+        />
+        <img
+          src="/static/images/heros/omu/hero.png"
+          class="herotierimg"
+          alt="오무"
+          id="omu"
+          data-value="2450"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="숲의 감시관 오무"
+          onclick = "location.href = '{% url 'info:omu' %}' "
+        />
+        <img
+          src="/static/images/heros/rafam/hero.png"
+          class="herotierimg"
+          alt="라팜"
+          id="rafam"
+          data-value="1750"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="대악당 라팜"
+          onclick = "location.href = '{% url 'info:rafam' %}' "
+        />
+        <img
+          src="/static/images/heros/nzoth/hero.png"
+          class="herotierimg"
+          alt="느조스"
+          id="nzoth"
+          data-value="1050"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="느조스"
+          onclick = "location.href = '{% url 'info:nzoth' %}' "
+        />
+        <img
+          src="/static/images/heros/tickatus/hero.png"
+          class="herotierimg"
+          alt="티케투스"
+          id="tickatus"
+          data-value="1350"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="티케투스"
+          onclick = "location.href = '{% url 'info:tickatus' %}' "
+        />
+        <img
+          src="/static/images/heros/galewing/hero.png"
+          class="herotierimg"
+          alt="돌풍날개"
+          id="galewing"
+          data-value="2400"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="돌풍날개"
+          onclick = "location.href = '{% url 'info:galewing' %}' "
+        />
+        <img
+          src="/static/images/heros/aranna/hero.png"
+          class="herotierimg"
+          alt="아라나 스타시커"
+          id="aranna"
+          data-value="1150"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="아라나 스타시커"
+          onclick = "location.href = '{% url 'info:aranna' %}' "
+        />
+        <img
+          src="/static/images/heros/tess/hero.png"
+          class="herotierimg"
+          alt="테스"
+          id="tess"
+          data-value="2150"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="테스"
+          onclick = "location.href = '{% url 'info:tess' %}' "
+        />
+        <img
+          src="/static/images/heros/dawngrasp/hero.png"
+          class="herotierimg"
+          alt="던"
+          id="dawngrasp"
+          data-value="1450"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="바르덴 던그래스프"
+          onclick = "location.href = '{% url 'info:dawngrasp' %}' "
+        />
+        <img
+          src="/static/images/heros/faelin/hero.png"
+          class="herotierimg"
+          alt="페이린"
+          id="faelin"
+          data-value="1400"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="사절 페이린"
+          onclick = "location.href = '{% url 'info:faelin' %}' "
+        />
+        <img
+          src="/static/images/heros/jaraxus/hero.png"
+          class="herotierimg"
+          alt="자락서스"
+          id="jaraxus"
+          data-value="1150"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="군주 자락서스"
+          onclick = "location.href = '{% url 'info:jaraxus' %}' "
+        />
+        <img
+          src="/static/images/heros/biggles/hero.png"
+          class="herotierimg"
+          alt="비글스"
+          id="biggles"
+          data-value="400"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="비글스워스 씨"
+          onclick = "location.href = '{% url 'info:biggles' %}' "
+        />
+        <img
+          src="/static/images/heros/mutanus/hero.png"
+          class="herotierimg"
+          alt="무타누스"
+          id="mutanus"
+          data-value="2350"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="걸신들린 무타누스"
+          onclick = "location.href = '{% url 'info:mutanus' %}' "
+        />
+        <img
+          src="/static/images/heros/deryl/hero.png"
+          class="herotierimg"
+          alt="다릴"
+          id="deryl"
+          data-value="1200"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="춤추는 다릴"
+          onclick = "location.href = '{% url 'info:deryl' %}' "
+        />
+        <img
+          src="/static/images/heros/mukla/hero.png"
+          class="herotierimg"
+          alt="무클라"
+          id="mukla"
+          data-value="2200"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="밀림의 왕 무클라"
+          onclick = "location.href = '{% url 'info:mukla' %}' "
+        />
+        <img
+          src="/static/images/heros/darkmoon/hero.png"
+          class="herotierimg"
+          alt="다크문"
+          id="darkmoon"
+          data-value="1850"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="실라스 다크문"
+          onclick = "location.href = '{% url 'info:darkmoon' %}' "
+        />
+        <img
+          src="/static/images/heros/toki/hero.png"
+          class="herotierimg"
+          alt="토키"
+          id="toki"
+          data-value="1900"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="무한의 토키"
+          onclick = "location.href = '{% url 'info:toki' %}' "
+        />
+        <img
+          src="/static/images/heros/cook/hero.png"
+          class="herotierimg"
+          alt="쿠키"
+          id="cook"
+          data-value="2500"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="요리사 쿠키"
+          onclick = "location.href = '{% url 'info:cook' %}' "
+        />
+        <img
+          src="/static/images/heros/alakir/hero.png"
+          class="herotierimg"
+          alt="알아키르"
+          id="alakir"
+          data-value="1200"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="알아키르"
+          onclick = "location.href = '{% url 'info:alakir' %}' "
+        />
+        <img
+          src="/static/images/heros/galakrond/hero.png"
+          class="herotierimg"
+          alt="갈라크론드"
+          id="galakrond"
+          data-value="1550"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="갈라크론드"
+          onclick = "location.href = '{% url 'info:galakrond' %}' "
+        />
+        <img
+          src="/static/images/heros/millhouse/hero.png"
+          class="herotierimg"
+          alt="밀하우스"
+          id="millhiouse"
+          data-value="1950"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="밀하우스 마나스톰"
+          onclick = "location.href = '{% url 'info:millhouse' %}' "
+        />
+        <img
+          src="/static/images/heros/elise/hero.png"
+          class="herotierimg"
+          alt="엘리스"
+          id="elise"
+          data-value="1550"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="엘리스 스타시커"
+          onclick = "location.href = '{% url 'info:elise' %}' "
+        />
+        <img
+          src="/static/images/heros/malygos/hero.png"
+          class="herotierimg"
+          alt="말리고스"
+          id="malygos"
+          data-value="1350"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="말리고스"
+          onclick = "location.href = '{% url 'info:malygos' %}' "
+        />
+        <img
+          src="/static/images/heros/gally/hero.png"
+          class="herotierimg"
+          alt="갤리윅스"
+          id="gally"
+          data-value="1550"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="무역왕 갤리윅스"
+          onclick = "location.href = '{% url 'info:gally' %}' "
+        />
+        <img
+          src="/static/images/heros/maiev/hero.png"
+          class="herotierimg"
+          alt="마이에브"
+          id="maiev"
+          data-value="1550"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="마이에브 섀도송"
+          onclick = "location.href = '{% url 'info:maiev' %}' "
+        />
+        <img
+          src="/static/images/heros/chenvala/hero.png"
+          class="herotierimg"
+          alt="첸바라"
+          id="chenvala"
+          data-value="1550"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="첸바라"
+          onclick = "location.href = '{% url 'info:chenvala' %}' "
+        />
+        <img
+          src="/static/images/heros/bran/hero.png"
+          class="herotierimg"
+          alt="브란"
+          id="bran"
+          data-value="1150"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="공룡조련사 브란"
+          onclick = "location.href = '{% url 'info:bran' %}' "
+        />
+        <img
+          src="/static/images/heros/zephy/hero.png"
+          class="herotierimg"
+          alt="제피로스"
+          id="zephy"
+          data-value="1550"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="위대한 제피르스"
+          onclick = "location.href = '{% url 'info:zephy' %}' "
+        />
+
+        <img
+          src="/static/images/heros/flurgl/hero.png"
+          class="herotierimg"
+          alt="플러글"
+          id="flurgl"
+          data-value="1800"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="곰팡이술사 플러글"
+          onclick = "location.href = '{% url 'info:flurgl' %}' "
+        />
+
+        <img
+          src="/static/images/heros/ezshra/hero.png"
+          class="herotierimg"
+          alt="여왕 이즈샤라"
+          id="ezshra"
+          data-value="2250"
+          data-mdb-toggle="tooltip"
+          data-mdb-placement="top"
+          data-mdb-original-title="여왕 이즈샤라"
+          onclick = "location.href = '{% url 'info:ezshra' %}' "
+        />
+
+      </div>
+    </section>
+<script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // 처음 배치
+      $('.herocollapse')
+        .find('img')
+        .each(function (i, e) {
+          if ($(this).data('value') >= 2000) {
+            $(this).insertAfter('#first');
+          } else if ($(this).data('value') >= 1500) {
+            $(this).insertAfter('#second');
+          } else if ($(this).data('value') >= 1000) {
+            $(this).insertAfter('#third');
+          } else if ($(this).data('value') >= 500) {
+            $(this).insertAfter('#four');
+          } else if ($(this).data('value') > 0) {
+            $(this).insertAfter('#five');
+          } else {
+            $(this).hide();
+          }
+        });
+      // 가멧 체크박스
+      $('#boar').change(function () {
+        var imChecked = $(this).is(':checked');
+        if (imChecked) {
+          var zephyv = $('#zephy').data('value');
+          var azephyv = zephyv + 50;
+          $('#zephy').data('value', azephyv);
+
+          var alakirv = $('#alakir').data('value');
+          var aalakirv = alakirv + 500;
+          $('#alakir').data('value', aalakirv);
+
+          var muklav = $('#mukla').data('value');
+          var amuklav = muklav + 500;
+          $('#mukla').data('value', amuklav);
+
+          var blackthornv = $('#blackthorn').data('value');
+          var ablackthornv = blackthornv + 1300;
+          $('#blackthorn').data('value', ablackthornv);
+          $('#blackthorn').show();
+
+          var georgev = $('#george').data('value');
+          var ageorgev = georgev + 300;
+          $('#george').data('value', ageorgev);
+
+          var sunstriderv = $('#sunstrider').data('value');
+          var asunstriderv = sunstriderv + 300;
+          $('#sunstrider').data('value', asunstriderv);
+
+          $('.card-body')
+            .find('img')
+            .each(function (i, e) {
+              if ($(this).data('value') >= 2000) {
+                $(this).insertAfter('#first');
+              } else if ($(this).data('value') >= 1500) {
+                $(this).insertAfter('#second');
+              } else if ($(this).data('value') >= 1000) {
+                $(this).insertAfter('#third');
+              } else if ($(this).data('value') >= 500) {
+                $(this).insertAfter('#four');
+              } else if ($(this).data('value') > 0) {
+                $(this).insertAfter('#five');
+              } else {
+                $(this).hide();
+              }
+            });
+        } else {
+          var zephyv = $('#zephy').data('value');
+          var azephyv = zephyv - 50;
+          $('#zephy').data('value', azephyv);
+
+          var alakirv = $('#alakir').data('value');
+          var aalakirv = alakirv - 500;
+          $('#alakir').data('value', aalakirv);
+
+          var muklav = $('#mukla').data('value');
+          var amuklav = muklav - 500;
+          $('#mukla').data('value', amuklav);
+
+          var blackthornv = $('#blackthorn').data('value');
+          var ablackthornv = blackthornv - 1300;
+          $('#blackthorn').data('value', ablackthornv);
+
+          var georgev = $('#george').data('value');
+          var ageorgev = georgev - 300;
+          $('#george').data('value', ageorgev);
+
+          var sunstriderv = $('#sunstrider').data('value');
+          var asunstriderv = sunstriderv - 300;
+          $('#sunstrider').data('value', asunstriderv);
+
+          $('.card-body')
+            .find('img')
+            .each(function (i, e) {
+              if ($(this).data('value') >= 2000) {
+                $(this).insertAfter('#first');
+              } else if ($(this).data('value') >= 1500) {
+                $(this).insertAfter('#second');
+              } else if ($(this).data('value') >= 1000) {
+                $(this).insertAfter('#third');
+              } else if ($(this).data('value') >= 500) {
+                $(this).insertAfter('#four');
+              } else if ($(this).data('value') > 0) {
+                $(this).insertAfter('#five');
+              } else {
+                $(this).hide();
+              }
+            });
+        }
+      });
+
+      //기계 체크박스
+
+      $('#mech').change(function () {
+        var imChecked = $(this).is(':checked');
+        if (imChecked) {
+          var maievv = $('#maiev').data('value');
+          var amaievv = maievv + 100;
+          $('#maiev').data('value', amaievv);
+
+          var muklav = $('#mukla').data('value');
+          var amuklav = muklav + 500;
+          $('#mukla').data('value', amuklav);
+
+          var mutanusv = $('#mutanus').data('value');
+          var amutanusv = mutanusv + 200;
+          $('#mutanus').data('value', amutanusv);
+
+          var nzothv = $('#nzoth').data('value');
+          var anzothv = nzothv + 300;
+          $('#nzoth').data('value', anzothv);
+
+          var guffv = $('#guff').data('value');
+          var aguffv = guffv + 250;
+          $('#guff').data('value', aguffv);
+
+          var renov = $('#reno').data('value');
+          var arenov = renov + 250;
+          $('#reno').data('value', arenov);
+
+          var greyboughv = $('#greybough').data('value');
+          var agreyboughv = greyboughv + 400;
+          $('#greybough').data('value', agreyboughv);
+
+          var blackthornv = $('#blackthorn').data('value');
+          var ablackthornv = blackthornv + 350;
+          $('#blackthorn').data('value', ablackthornv);
+
+          var lnistormcoilv = $('#lnistormcoil').data('value');
+          var alnistormcoilv = lnistormcoilv + 1250;
+          $('#lnistormcoil').data('value', alnistormcoilv);
+          $('#lnistormcoil').show();
+
+          var millificentv = $('#millificent').data('value');
+          var amillificentv = millificentv + 550;
+          $('#millificent').data('value', amillificentv);
+          $('#millificent').show();
+
+          var voljinv = $('#voljin').data('value');
+          var avoljinv = voljinv + 200;
+          $('#voljin').data('value', avoljinv);
+
+          var saurfangv = $('#saurfang').data('value');
+          var asaurfangv = saurfangv + 300;
+          $('#saurfang').data('value', asaurfangv);
+
+          var sunstriderv = $('#sunstrider').data('value');
+          var asunstriderv = sunstriderv + 300;
+          $('#sunstrider').data('value', asunstriderv);
+
+          var kurtrusv = $('#kurtrus').data('value');
+          var akurtrusv = kurtrusv + 200;
+          $('#kurtrus').data('value', akurtrusv);
+
+          var carielv = $('#cariel').data('value');
+          var acarielv = carielv + 300;
+          $('#cariel').data('value', acarielv);
+
+          var rakanishuv = $('#rakanishu').data('value');
+          var arakanishuv = rakanishuv + 300;
+          $('#rakanishu').data('value', arakanishuv);
+
+          var ragnarosv = $('#ragnaros').data('value');
+          var aragnarosv = ragnarosv + 300;
+          $('#ragnaros').data('value', aragnarosv);
+
+          var vancleefv = $('#vancleef').data('value');
+          var avancleefv = vancleefv + 300;
+          $('#vancleef').data('value', avancleefv);
+
+          var wagtogglev = $('#wagtoggle').data('value');
+          var awagtogglev = wagtogglev + 300;
+          $('#wagtoggle').data('value', awagtogglev);
+
+          var AFkeyv = $('#AFkey').data('value');
+          var aAFkeyv = AFkeyv + 300;
+          $('#AFkey').data('value', aAFkeyv);
+
+          $('.card-body')
+            .find('img')
+            .each(function (i, e) {
+              if ($(this).data('value') >= 2000) {
+                $(this).insertAfter('#first');
+              } else if ($(this).data('value') >= 1500) {
+                $(this).insertAfter('#second');
+              } else if ($(this).data('value') >= 1000) {
+                $(this).insertAfter('#third');
+              } else if ($(this).data('value') >= 500) {
+                $(this).insertAfter('#four');
+              } else if ($(this).data('value') > 0) {
+                $(this).insertAfter('#five');
+              } else {
+                $(this).hide();
+              }
+            });
+        } else {
+          var maievv = $('#maiev').data('value');
+          var amaievv = maievv - 100;
+          $('#maiev').data('value', amaievv);
+
+          var muklav = $('#mukla').data('value');
+          var amuklav = muklav - 500;
+          $('#mukla').data('value', amuklav);
+
+          var mutanusnv = $('#mutanus').data('value');
+          var amutanusv = mutanusv - 200;
+          $('#mutanus').data('value', amutanusv);
+
+          var nzothv = $('#nzoth').data('value');
+          var anzothv = nzothv - 300;
+          $('#nzoth').data('value', anzothv);
+
+          var guffv = $('#guff').data('value');
+          var aguffv = guffv - 250;
+          $('#guff').data('value', aguffv);
+
+          var renov = $('#reno').data('value');
+          var arenov = renov - 250;
+          $('#reno').data('value', arenov);
+
+          var greyboughv = $('#greybough').data('value');
+          var agreyboughv = greyboughv - 400;
+          $('#greybough').data('value', agreyboughv);
+
+          var blackthornv = $('#blackthorn').data('value');
+          var ablackthornv = blackthornv - 350;
+          $('#blackthorn').data('value', ablackthornv);
+
+          var lnistormcoilv = $('#lnistormcoil').data('value');
+          var alnistormcoilv = lnistormcoilv - 1250;
+          $('#lnistormcoil').data('value', alnistormcoilv);
+
+          var millificentv = $('#millificent').data('value');
+          var amillificentv = millificentv - 550;
+          $('#millificent').data('value', amillificentv);
+
+          var voljinv = $('#voljin').data('value');
+          var avoljinv = voljinv - 200;
+          $('#voljin').data('value', avoljinv);
+
+          var saurfangv = $('#saurfang').data('value');
+          var asaurfangv = saurfangv - 300;
+          $('#saurfang').data('value', asaurfangv);
+
+          var sunstriderv = $('#sunstrider').data('value');
+          var asunstriderv = sunstriderv - 300;
+          $('#sunstrider').data('value', asunstriderv);
+
+          var kurtrusv = $('#kurtrus').data('value');
+          var akurtrusv = kurtrusv - 200;
+          $('#kurtrus').data('value', akurtrusv);
+
+          var carielv = $('#cariel').data('value');
+          var acarielv = carielv - 300;
+          $('#cariel').data('value', acarielv);
+
+          var rakanishuv = $('#rakanishu').data('value');
+          var arakanishuv = rakanishuv - 300;
+          $('#rakanishu').data('value', arakanishuv);
+
+          var ragnarosv = $('#ragnaros').data('value');
+          var aragnarosv = ragnarosv - 300;
+          $('#ragnaros').data('value', aragnarosv);
+
+          var vancleefv = $('#vancleef').data('value');
+          var avancleefv = vancleefv - 300;
+          $('#vancleef').data('value', avancleefv);
+
+          var wagtogglev = $('#wagtoggle').data('value');
+          var awagtogglev = wagtogglev - 300;
+          $('#wagtoggle').data('value', awagtogglev);
+
+          var AFkeyv = $('#AFkey').data('value');
+          var aAFkeyv = AFkeyv - 300;
+          $('#AFkey').data('value', aAFkeyv);
+
+          $('.card-body')
+            .find('img')
+            .each(function (i, e) {
+              if ($(this).data('value') >= 2000) {
+                $(this).insertAfter('#first');
+              } else if ($(this).data('value') >= 1500) {
+                $(this).insertAfter('#second');
+              } else if ($(this).data('value') >= 1000) {
+                $(this).insertAfter('#third');
+              } else if ($(this).data('value') >= 500) {
+                $(this).insertAfter('#four');
+              } else if ($(this).data('value') > 0) {
+                $(this).insertAfter('#five');
+              } else {
+                $(this).hide();
+              }
+            });
+        }
+      });
+
+      // 악마 체크박스
+      $('#demon').change(function () {
+        var imChecked = $(this).is(':checked');
+        if (imChecked) {
+          var jaraxusv = $('#jaraxus').data('value');
+          var ajaraxusv = jaraxusv + 1150;
+          $('#jaraxus').data('value', ajaraxusv);
+          $('#jaraxus').show();
+
+          var mutanusv = $('#mutanus').data('value');
+          var amutanusv = mutanusv + 200;
+          $('#mutanus').data('value', amutanusv);
+
+          $('.card-body')
+            .find('img')
+            .each(function (i, e) {
+              if ($(this).data('value') >= 2000) {
+                $(this).insertAfter('#first');
+              } else if ($(this).data('value') >= 1500) {
+                $(this).insertAfter('#second');
+              } else if ($(this).data('value') >= 1000) {
+                $(this).insertAfter('#third');
+              } else if ($(this).data('value') >= 500) {
+                $(this).insertAfter('#four');
+              } else if ($(this).data('value') > 0) {
+                $(this).insertAfter('#five');
+              } else {
+                $(this).hide();
+              }
+            });
+        } else {
+          var jaraxusv = $('#jaraxus').data('value');
+          var ajaraxusv = jaraxusv - 1150;
+          $('#jaraxus').data('value', ajaraxusv);
+
+          var mutanusv = $('#mutanus').data('value');
+          var amutanusv = mutanusv - 200;
+          $('#mutanus').data('value', amutanusv);
+
+          $('.card-body')
+            .find('img')
+            .each(function (i, e) {
+              if ($(this).data('value') >= 2000) {
+                $(this).insertAfter('#first');
+              } else if ($(this).data('value') >= 1500) {
+                $(this).insertAfter('#second');
+              } else if ($(this).data('value') >= 1000) {
+                $(this).insertAfter('#third');
+              } else if ($(this).data('value') >= 500) {
+                $(this).insertAfter('#four');
+              } else if ($(this).data('value') > 0) {
+                $(this).insertAfter('#five');
+              } else {
+                $(this).hide();
+              }
+            });
+        }
+      });
+
+      // 야수 체크박스
+      $('#beast').change(function () {
+        var imChecked = $(this).is(':checked');
+        if (imChecked) {
+          var elisev = $('#elise').data('value');
+          var aelisev = elisev + 100;
+          $('#elise').data('value', aelisev);
+
+          var alakirv = $('#alakir').data('value');
+          var aalakirv = alakirv + 400;
+          $('#alakir').data('value', aalakirv);
+
+          var nzothv = $('#nzoth').data('value');
+          var anzothv = nzothv + 600;
+          $('#nzoth').data('value', anzothv);
+
+          var rafamv = $('#rafam').data('value');
+          var arafamv = rafamv + 50;
+          $('#rafam').data('value', arafamv);
+
+          var renov = $('#reno').data('value');
+          var arenov = renov + 250;
+          $('#reno').data('value', arenov);
+
+          var greyboughv = $('#greybough').data('value');
+          var agreyboughv = greyboughv + 400;
+          $('#greybough').data('value', agreyboughv);
+
+          var jandicev = $('#jandice').data('value');
+          var ajandicev = jandicev + 1000;
+          $('#jandice').data('value', ajandicev);
+
+          var lichkingv = $('#lichking').data('value');
+          var alichkingv = lichkingv + 300;
+          $('#lichking').data('value', alichkingv);
+
+          var kraggv = $('#kragg').data('value');
+          var akraggv = kraggv + 200;
+          $('#kragg').data('value', akraggv);
+
+          var kraggv = $('#kragg').data('value');
+          var akraggv = kraggv + 200;
+          $('#kragg').data('value', akraggv);
+
+          var akazamv = $('#akazam').data('value');
+          var aakazamv = akazamv + 200;
+          $('#akazam').data('value', aakazamv);
+
+          var scabbsv = $('#scabbs').data('value');
+          var ascabbsv = scabbsv + 100;
+          $('#scabbs').data('value', ascabbsv);
+
+          var hooktuskv = $('#hooktusk').data('value');
+          var ahooktuskv = hooktuskv + 300;
+          $('#hooktusk').data('value', ascabbsv);
+
+          var douckv = $('#douck').data('value');
+          var adouckv = douckv + 850;
+          $('#douck').data('value', adouckv);
+
+          $('.card-body')
+            .find('img')
+            .each(function (i, e) {
+              if ($(this).data('value') >= 2000) {
+                $(this).insertAfter('#first');
+              } else if ($(this).data('value') >= 1500) {
+                $(this).insertAfter('#second');
+              } else if ($(this).data('value') >= 1000) {
+                $(this).insertAfter('#third');
+              } else if ($(this).data('value') >= 500) {
+                $(this).insertAfter('#four');
+              } else if ($(this).data('value') > 0) {
+                $(this).insertAfter('#five');
+              } else {
+                $(this).hide();
+              }
+            });
+        } else {
+          var elisev = $('#elise').data('value');
+          var aelisev = elisev - 100;
+          $('#elise').data('value', aelisev);
+
+          var alakirv = $('#alakir').data('value');
+          var aalakirv = alakirv - 400;
+          $('#alakir').data('value', aalakirv);
+
+          var nzothv = $('#nzoth').data('value');
+          var anzothv = nzothv - 600;
+          $('#nzoth').data('value', anzothv);
+
+          var rafamv = $('#rafam').data('value');
+          var arafamv = rafamv - 50;
+          $('#rafam').data('value', arafamv);
+
+          var renov = $('#reno').data('value');
+          var arenov = renov - 250;
+          $('#reno').data('value', arenov);
+
+          var greyboughv = $('#greybough').data('value');
+          var agreyboughv = greyboughv - 400;
+          $('#greybough').data('value', agreyboughv);
+
+          var jandicev = $('#jandice').data('value');
+          var ajandicev = jandicev - 1000;
+          $('#jandice').data('value', ajandicev);
+
+          var lichkingv = $('#lichking').data('value');
+          var alichkingv = lichkingv - 300;
+          $('#lichking').data('value', alichkingv);
+
+          var kraggv = $('#kragg').data('value');
+          var akraggv = kraggv - 200;
+          $('#kragg').data('value', akraggv);
+
+          var kraggv = $('#kragg').data('value');
+          var akraggv = kraggv + 200;
+          $('#kragg').data('value', akraggv);
+
+          var akazamv = $('#akazam').data('value');
+          var aakazamv = akazamv - 200;
+          $('#akazam').data('value', aakazamv);
+
+          var scabbsv = $('#scabbs').data('value');
+          var ascabbsv = scabbsv - 100;
+          $('#scabbs').data('value', ascabbsv);
+
+          var hooktuskv = $('#hooktusk').data('value');
+          var ahooktuskv = hooktuskv - 300;
+          $('#hooktusk').data('value', ascabbsv);
+
+          var douckv = $('#douck').data('value');
+          var adouckv = douckv - 850;
+          $('#douck').data('value', adouckv);
+
+          $('.card-body')
+            .find('img')
+            .each(function (i, e) {
+              if ($(this).data('value') >= 2000) {
+                $(this).insertAfter('#first');
+              } else if ($(this).data('value') >= 1500) {
+                $(this).insertAfter('#second');
+              } else if ($(this).data('value') >= 1000) {
+                $(this).insertAfter('#third');
+              } else if ($(this).data('value') >= 500) {
+                $(this).insertAfter('#four');
+              } else if ($(this).data('value') > 0) {
+                $(this).insertAfter('#five');
+              } else {
+                $(this).hide();
+              }
+            });
+        }
+      });
+
+      // 용족 체크박스
+      $('#dragon').change(function () {
+        var imChecked = $(this).is(':checked');
+        if (imChecked) {
+          var alexstrav = $('#alexstra').data('value');
+          var aalexstrav = alexstrav + 1150;
+          $('#alexstra').data('value', aalexstrav);
+          $('#alexstra').show();
+
+          var yeserav = $('#yesera').data('value');
+          var ayeserav = yeserav + 400;
+          $('#yesera').data('value', ayeserav);
+          $('#yesera').show();
+
+          var voljinv = $('#voljin').data('value');
+          var avoljinv = voljinv + 200;
+          $('#voljin').data('value', avoljinv);
+
+          var tamsinv = $('#tamsin').data('value');
+          var atamsinv = tamsinv + 500;
+          $('#tamsin').data('value', atamsinv);
+
+          var tavshiv = $('#tavshi').data('value');
+          var atavshiv = tavshiv + 500;
+          $('#tavshi').data('value', atavshiv);
+
+          $('.card-body')
+            .find('img')
+            .each(function (i, e) {
+              if ($(this).data('value') >= 2000) {
+                $(this).insertAfter('#first');
+              } else if ($(this).data('value') >= 1500) {
+                $(this).insertAfter('#second');
+              } else if ($(this).data('value') >= 1000) {
+                $(this).insertAfter('#third');
+              } else if ($(this).data('value') >= 500) {
+                $(this).insertAfter('#four');
+              } else if ($(this).data('value') > 0) {
+                $(this).insertAfter('#five');
+              } else {
+                $(this).hide();
+              }
+            });
+        } else {
+          var alexstrav = $('#alexstra').data('value');
+          var aalexstrav = alexstrav - 1150;
+          $('#alexstra').data('value', aalexstrav);
+
+          var yeserav = $('#yesera').data('value');
+          var ayeserav = yeserav - 400;
+          $('#yesera').data('value', ayeserav);
+
+          var voljinv = $('#voljin').data('value');
+          var avoljinv = voljinv - 200;
+          $('#voljin').data('value', avoljinv);
+
+          var tamsinv = $('#tamsin').data('value');
+          var atamsinv = tamsinv - 500;
+          $('#tamsin').data('value', atamsinv);
+
+          var tavshiv = $('#tavshi').data('value');
+          var atavshiv = tavshiv - 500;
+          $('#tavshi').data('value', atavshiv);
+
+          $('.card-body')
+            .find('img')
+            .each(function (i, e) {
+              if ($(this).data('value') >= 2000) {
+                $(this).insertAfter('#first');
+              } else if ($(this).data('value') >= 1500) {
+                $(this).insertAfter('#second');
+              } else if ($(this).data('value') >= 1000) {
+                $(this).insertAfter('#third');
+              } else if ($(this).data('value') >= 500) {
+                $(this).insertAfter('#four');
+              } else if ($(this).data('value') > 0) {
+                $(this).insertAfter('#five');
+              } else {
+                $(this).hide();
+              }
+            });
+        }
+      });
+
+      // 멀록 체크박스
+      $('#mulock').change(function () {
+        var imChecked = $(this).is(':checked');
+        if (imChecked) {
+          var flurglv = $('#flurgl').data('value');
+          var aflurglv = flurglv + 1800;
+          $('#flurgl').data('value', aflurglv);
+          $('#flurgl').show();
+
+          var branv = $('#bran').data('value');
+          var abranv = branv + 500;
+          $('#bran').data('value', abranv);
+
+          var chenvalav = $('#chenvala').data('value');
+          var achenvalav = chenvalav - 1000;
+          $('#chenvala').data('value', achenvalav);
+
+          var jaraxusv = $('#jaraxus').data('value');
+          var ajaraxusv = jaraxusv - 1000;
+          $('#jaraxus').data('value', ajaraxusv);
+
+          var alakirv = $('#alakir').data('value');
+          var aalakirv = alakirv + 100;
+          $('#alakir').data('value', aalakirv);
+
+          var georgev = $('#george').data('value');
+          var ageorgev = georgev + 500;
+          $('#george').data('value', ageorgev);
+
+          $('.card-body')
+            .find('img')
+            .each(function (i, e) {
+              if ($(this).data('value') >= 2000) {
+                $(this).insertAfter('#first');
+              } else if ($(this).data('value') >= 1500) {
+                $(this).insertAfter('#second');
+              } else if ($(this).data('value') >= 1000) {
+                $(this).insertAfter('#third');
+              } else if ($(this).data('value') >= 500) {
+                $(this).insertAfter('#four');
+              } else if ($(this).data('value') > 0) {
+                $(this).insertAfter('#five');
+              } else {
+                $(this).hide();
+              }
+            });
+        } else {
+          var flurglv = $('#flurgl').data('value');
+          var aflurglv = flurglv - 1800;
+          $('#flurgl').data('value', aflurglv);
+
+          var branv = $('#bran').data('value');
+          var abranv = branv - 500;
+          $('#bran').data('value', abranv);
+
+          var chenvalav = $('#chenvala').data('value');
+          var achenvalav = chenvalav + 1000;
+          $('#chenvala').data('value', achenvalav);
+
+          var jaraxusv = $('#jaraxus').data('value');
+          var ajaraxusv = jaraxusv + 1000;
+          $('#jaraxus').data('value', ajaraxusv);
+
+          var alakirv = $('#alakir').data('value');
+          var aalakirv = alakirv - 100;
+          $('#alakir').data('value', aalakirv);
+
+          var georgev = $('#george').data('value');
+          var ageorgev = georgev - 500;
+          $('#george').data('value', ageorgev);
+
+          $('.card-body')
+            .find('img')
+            .each(function (i, e) {
+              if ($(this).data('value') >= 2000) {
+                $(this).insertAfter('#first');
+              } else if ($(this).data('value') >= 1500) {
+                $(this).insertAfter('#second');
+              } else if ($(this).data('value') >= 1000) {
+                $(this).insertAfter('#third');
+              } else if ($(this).data('value') >= 500) {
+                $(this).insertAfter('#four');
+              } else if ($(this).data('value') > 0) {
+                $(this).insertAfter('#five');
+              } else {
+                $(this).hide();
+              }
+            });
+        }
+      });
+
+      // 정령 체크박스
+      $('#element').change(function () {
+        var imChecked = $(this).is(':checked');
+        if (imChecked) {
+          var chenvalav = $('#chenvala').data('value');
+          var achenvalav = chenvalav + 1550;
+          $('#chenvala').data('value', achenvalav);
+          $('#chenvala').show();
+
+          var gallyv = $('#gally').data('value');
+          var agallyv = gallyv + 1500;
+          $('#gally').data('value', agallyv);
+
+          var millhousev = $('#millhouse').data('value');
+          var amillhousev = millhousev + 1000;
+          $('#millhouse').data('value', amillhousev);
+
+          var arannav = $('#aranna').data('value');
+          var aarannav = arannav + 500;
+          $('#aranna').data('value', aarannav);
+
+          var tickatusv = $('#tickatus').data('value');
+          var atickatusv = tickatusv + 100;
+          $('#tickatus').data('value', atickatusv);
+
+          var rafamv = $('#rafam').data('value');
+          var arafamv = rafamv + 50;
+          $('#rafam').data('value', arafamv);
+
+          var nozdormuv = $('#nozdormu').data('value');
+          var anozdormuv = nozdormuv + 200;
+          $('#nozdormu').data('value', anozdormuv);
+
+          var scabbsv = $('#scabbs').data('value');
+          var ascabbsv = scabbsv + 100;
+          $('#scabbs').data('value', ascabbsv);
+
+          $('.card-body')
+            .find('img')
+            .each(function (i, e) {
+              if ($(this).data('value') >= 2000) {
+                $(this).insertAfter('#first');
+              } else if ($(this).data('value') >= 1500) {
+                $(this).insertAfter('#second');
+              } else if ($(this).data('value') >= 1000) {
+                $(this).insertAfter('#third');
+              } else if ($(this).data('value') >= 500) {
+                $(this).insertAfter('#four');
+              } else if ($(this).data('value') > 0) {
+                $(this).insertAfter('#five');
+              } else {
+                $(this).hide();
+              }
+            });
+        } else {
+          var chenvalav = $('#chenvala').data('value');
+          var achenvalav = chenvalav - 1550;
+          $('#chenvala').data('value', achenvalav);
+
+          var gallyv = $('#gally').data('value');
+          var agallyv = gallyv - 1500;
+          $('#gally').data('value', agallyv);
+
+          var millhousev = $('#millhouse').data('value');
+          var amillhousev = millhousev - 1000;
+          $('#millhouse').data('value', amillhousev);
+
+          var arannav = $('#aranna').data('value');
+          var aarannav = arannav - 500;
+          $('#aranna').data('value', aarannav);
+
+          var tickatusv = $('#tickatus').data('value');
+          var atickatusv = tickatusv - 100;
+          $('#tickatus').data('value', atickatusv);
+
+          var rafamv = $('#rafam').data('value');
+          var arafamv = rafamv - 50;
+          $('#rafam').data('value', arafamv);
+
+          var nozdormuv = $('#nozdormu').data('value');
+          var anozdormuv = nozdormuv - 200;
+          $('#nozdormu').data('value', anozdormuv);
+
+          var scabbsv = $('#scabbs').data('value');
+          var ascabbsv = scabbsv - 100;
+          $('#scabbs').data('value', ascabbsv);
+
+          $('.card-body')
+            .find('img')
+            .each(function (i, e) {
+              if ($(this).data('value') >= 2000) {
+                $(this).insertAfter('#first');
+              } else if ($(this).data('value') >= 1500) {
+                $(this).insertAfter('#second');
+              } else if ($(this).data('value') >= 1000) {
+                $(this).insertAfter('#third');
+              } else if ($(this).data('value') >= 500) {
+                $(this).insertAfter('#four');
+              } else if ($(this).data('value') > 0) {
+                $(this).insertAfter('#five');
+              } else {
+                $(this).hide();
+              }
+            });
+        }
+      });
+
+
+      // 나가 체크박스
+      $('#naga').change(function () {
+        var imChecked = $(this).is(':checked');
+        if (imChecked) {
+          var ezshrav = $('#ezshra').data('value');
+          var aezshrav = ezshrav + 1250;
+          $('#ezshra').data('value', aezshrav);
+          $('#ezshra').show();
+
+
+          $('.card-body')
+            .find('img')
+            .each(function (i, e) {
+              if ($(this).data('value') >= 2000) {
+                $(this).insertAfter('#first');
+              } else if ($(this).data('value') >= 1500) {
+                $(this).insertAfter('#second');
+              } else if ($(this).data('value') >= 1000) {
+                $(this).insertAfter('#third');
+              } else if ($(this).data('value') >= 500) {
+                $(this).insertAfter('#four');
+              } else if ($(this).data('value') > 0) {
+                $(this).insertAfter('#five');
+              } else {
+                $(this).hide();
+              }
+            });
+        } else {
+          var ezshrav = $('#ezshra').data('value');
+          var aezshrav = ezshrav - 1250;
+          $('#ezshra').data('value', aezshrav);
+
+
+
+          $('.card-body')
+            .find('img')
+            .each(function (i, e) {
+              if ($(this).data('value') >= 2000) {
+                $(this).insertAfter('#first');
+              } else if ($(this).data('value') >= 1500) {
+                $(this).insertAfter('#second');
+              } else if ($(this).data('value') >= 1000) {
+                $(this).insertAfter('#third');
+              } else if ($(this).data('value') >= 500) {
+                $(this).insertAfter('#four');
+              } else if ($(this).data('value') > 0) {
+                $(this).insertAfter('#five');
+              } else {
+                $(this).hide();
+              }
+            });
+        }
+      });
+
+      // 영웅사진을 다 배열에 넣고 체크박스에 따라 value값 조절 후 value 값 순서대로 배치하기
+    </script>
+
+{% endblock %}

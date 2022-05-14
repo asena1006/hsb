@@ -1,6 +1,6 @@
-
 from django.contrib.auth import authenticate, login, logout, update_session_auth_hash
 from django.core.serializers.json import DjangoJSONEncoder
+
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 
@@ -302,6 +302,9 @@ def profile_delete_view(request):
         password_form = CheckPasswordForm(request.user)
 
     return render(request, 'users/profile_delete.html', {'password_form': password_form})
+
+
+
 
 
 

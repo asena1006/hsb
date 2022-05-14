@@ -21,16 +21,19 @@
                 <a class="nav-link" aria-current="page" href="{% url 'users:main' %}">메인</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">티어리스트</a>
+                <a class="nav-link" href="{% url 'tierlist:tierlist' %}">티어리스트</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">공략</a>
+                <a class="nav-link" href="{% url 'info:guide' %}">초보자가이드</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">종족특징</a>
+                <a class="nav-link" href="{% url 'info:type' %}">종족특징</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">커뮤니티</a>
+                <a class="nav-link" href="{% url 'free:all_list' %}">커뮤니티</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'notice:notice_list' %}">공지사항</a>
               </li>
             </ul>
 

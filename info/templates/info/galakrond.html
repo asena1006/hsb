@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="container">
+      <div class="dtierlist">
+
+      </div>
+      <div class="buttoncollapse" style="margin-bottom: 1rem">
+        <button
+          type="button"
+          class="btn btn-warning btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          2티어
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          나가
+        </button>
+
+          <button
+          type="button"
+          class="btn btn-info btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          기계
+        </button>
+          <button
+          type="button"
+          class="btn btn-dark btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          해적
+        </button>
+
+
+      </div>
+
+      <div class="card mb-4">
+        <div class="card-body">
+          <h4 style="font-family: 'IBM Plex Sans KR', sans-serif">[갈라크론드]</h4>
+          <img src="/static/images/heros/galakrond/hero.png" alt="" style="width: 4rem" />
+            <img src="/static/images/heros/galakrond/power.png" alt="" style="width: 4rem" />
+
+
+            <div>
+              <div style="font-size: 15px; margin-top: 2rem; ">[영웅 능력] <br> 밥의 선술집에 있는 하수인을 선택합니다. <br> 그 하수인을 한 단계 높은 하수인을 발견하고 그 하수인으로 교체합니다. <br>  </div>
+
+
+            </div>
+
+          <hr />
+          <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[소개]</h5>
+            <p>빠르게 높은 등급의 하수인을 발견 할 수 있는 영웅입니다.</p>
+
+            <p> 하지만 필드를 안정적으로 구성하기 위해선 6레벨 발견 기물이 바로 힘을 발휘할 수 있는 하수인 이여야 합니다.</p>
+            <p>만약 6렙 발견에서 나가 종족이 나오면 나가, 엘리자가 나오면 해적, 오메가가 나오면 기계로 가는 것이 좋습니다.</p>
+
+
+            <hr />
+            <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[핵심하수인 - 나가]</h5>
+            <div style="margin-bottom: 2rem;">
+           <img src="/static/images/heros/tess/info/one.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/tess/info/two.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/tess/info/thr.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/tess/info/our.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/tess/info/f.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/tess/info/s.png" alt=""  class="infoimg"/>
+            </div>
+            <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[핵심하수인 - 기계]</h5>
+            <div style="margin-bottom: 2rem;">
+           <img src="/static/images/heros/galakrond/info/mone.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/galakrond/info/mtwo.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/galakrond/info/mthr.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/galakrond/info/mfour.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/galakrond/info/mfive.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/galakrond/info/msix.png" alt=""  class="infoimg"/>
+            </div>
+            <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[핵심하수인 - 해적]</h5>
+          <img src="/static/images/heros/galakrond/info/pone.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/galakrond/info/ptwo.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/galakrond/info/pthr.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/galakrond/info/pfour.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/galakrond/info/pfive.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/galakrond/info/psix.png" alt="" s class="infoimg"/>
+
+
+
+          <hr />
+          <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[운영법]</h5>
+          <p> ▶ 1턴 (3마나) : 하수인 구매 </p>
+          <p> ▶ 2턴 (4마나) : 하수인 + 영웅능력 사용(2단계 발견) </p>
+          <p> ▶ 3턴 (5마나) : 하수인 구매 + 영웅능력 사용(3단계 발견) </p>
+          <p> ▶ 4턴 (6마나) : 레벨업 + 하수인 구매 + 영웅능력 사용(4단계 발견)</p>
+          <p> ▶ 5턴 (7마나) : 하수인 구매 +  하수인 구매 + 영웅능력 사용(5단계 발견) </p>
+          <p> ▶ 6턴 (8마나) : 레벨업 + 영웅능력 사용(6단계 발견) </p>
+          <p> ▶ 7턴 (9마나) : 6단계 발견 하수인에 따라 하수인 구매 </p>
+
+          <br>
+          <p> 6단계 발견 하수인에 따라 가는 종족이 바뀝니다.  </p>
+
+          <p> 해적 종족은 일명 해조디아로 가는것이 이상적인데 핵심은 뱃사람에게만 아르거스로 도발을 바르는 것입니다. </p>
+            <p> 자칫 하면 6렙 발견에 망하거나 필드를 제대로 못짜서 골찌할 위험도 큰 영웅입니다. </p>
+
+
+        </div>
+      </div>
+    </section>
+
+{% endblock %}

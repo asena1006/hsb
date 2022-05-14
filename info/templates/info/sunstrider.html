@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="container">
+      <div class="dtierlist">
+
+      </div>
+      <div class="buttoncollapse" style="margin-bottom: 1rem">
+        <button
+          type="button"
+          class="btn btn-success btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          3티어
+        </button>
+        <button
+          type="button"
+          class="btn btn-info btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          기계
+        </button>
+        <button
+          type="button"
+          class="btn btn-warning btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          가시멧돼지
+        </button>
+
+
+      <div class="card mb-4">
+        <div class="card-body">
+          <h4 style="font-family: 'IBM Plex Sans KR', sans-serif">[캘타스 선스트라이더]</h4>
+          <img src="/static/images/heros/sunstrider/hero.png" alt="" style="width: 4rem" />
+            <img src="/static/images/heros/sunstrider/power.png" alt="" style="width: 4rem" />
+
+            <div>
+              <div style="font-size: 15px; margin-top: 2rem; ">[영웅 능력] <br> 내가 세 번째로 사는 하수인들이 +2/+2를 얻습니다.</div>
+
+
+            </div>
+
+          <hr />
+          <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[소개]</h5>
+            <p>기계와 가시멧돼지가 동시에 살았을때 고를만 한 영웅입니다.</p>
+            <p>초반에는 강력하지만 후반으로 갈수록 힘이 빠지므로 초반에 체력관리를 잘 해놓아야 합니다.</p>
+            <hr />
+            <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[핵심하수인]</h5>
+            <div style="margin-bottom: 2rem;">
+            <img src="/static/images/heros/AFkey/info/bansa.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/AFkey/info/ze.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/AFkey/info/heol.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/AFkey/info/gi.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/AFkey/info/four.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/AFkey/info/chun.png" alt="" s class="infoimg"/>
+            </div>
+
+
+          <hr />
+          <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[운영법]</h5>
+          <p> ▶ 1턴 (3마나) : 하수인 구매 </p>
+          <p> ▶ 2턴 (4마나) : 레벨업 </p>
+          <p> ▶ 3턴 (5마나) : 하수인 구매 </p>
+          <p> ▶ 4턴 (6마나) : 하수인 구매 + 하수인 구매 </p>
+          <p> ▶ 5턴 (7마나) : 레벨업 + 하수인 구매 </p>
+          <p> ▶ 6턴 (8마나) : 하수인 구매 </p>
+          <p> ▶ 7턴 (9마나) : 레벨업 + 하수인 구매 </p>
+
+
+
+           <p> 정상 마나커브로 운영하며 선술집 3레벨에서 혈석 절단자를 구매해주고  </p>
+          <p> 혈석 수급을 지속적으로 하며 지면 진동자를 통해 필드를 강화합니다. </p>
+          <p> 후에 지면 진동자의 혈석을 히드라/전투절단기 등으로 옮길 수 있습니다. </p>
+
+        </div>
+      </div>
+    </section>
+
+{% endblock %}

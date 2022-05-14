@@ -16495,12 +16495,20 @@ caption {
 .type {
   padding-left: 3rem;
 }
+
+.infoimg {
+  width: 10rem;
+}
+
 @media (max-width: 1200px) {
   .heroname {
     padding-left: 1rem;
   }
   .type {
     padding-left: 1rem;
+  }
+  .infoimg {
+    width: 9rem;
   }
 }
 @media (max-width: 992px) {
@@ -16520,6 +16528,9 @@ caption {
   .type {
     padding-left: 3rem;
   }
+  .infoimg {
+    width: 6rem;
+  }
 }
 @media (max-width: 767px) {
   .tierbutton {
@@ -16534,6 +16545,9 @@ caption {
   }
   .type {
     padding-left: 1rem;
+  }
+  .infoimg {
+    width: 4rem;
   }
 }
 
@@ -16569,6 +16583,33 @@ caption {
     padding-right: 0rem;
   }
 }
+@media (max-width: 425px) {
+  .container {
+    max-width: fit-content;
+  }
+  .tierbutton {
+    padding-right: 1rem;
+  }
+  .morebutton {
+    padding-left: 1rem;
+  }
+  .corelist {
+    padding-top: 1rem;
+  }
+  .tierbutton {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .infoimg {
+    width: 3rem;
+  }
+  .herotierimg {
+    width: 1rem;
+ }
+ .pan {
+    font-size: 8px;
+ }
+}
 
 @media (max-width: 375px) {
   .container {
@@ -16592,4 +16633,37 @@ caption {
   .hasuin {
     padding-left: 0rem;
   }
+}
+
+.registerlogo {
+  margin-top: 3rem;
+  width: 20rem;
+}
+
+.registerbutton {
+  width: 7rem;
+}
+
+.loginform {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+}
+
+.lnistormcoil {
+  overflow: hidden;
+  width: fit-content;
+}
+.herotierimg {
+  width: 4rem;
+}
+
+.form-check {
+  width: fit-content;
+  float: left;
+  margin-right: 2rem;
+  margin-left: 1rem;
+}
+.checkbox {
+  overflow: hidden;
 }

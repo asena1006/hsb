@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="container">
+      <div class="dtierlist">
+
+      </div>
+      <div class="buttoncollapse" style="margin-bottom: 1rem">
+        <button
+          type="button"
+          class="btn btn-info btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          4티어
+        </button>
+        <button
+          type="button"
+          class="btn btn-info btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          기계
+        </button>
+        <button
+          type="button"
+          class="btn btn-warning btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          가시멧돼지
+        </button>
+        <button
+          type="button"
+          class="btn btn-dark btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          혼합
+        </button>
+      </div>
+
+      <div class="card mb-4">
+        <div class="card-body">
+          <h4 style="font-family: 'IBM Plex Sans KR', sans-serif">[쿨트러스 애쉬폴른]</h4>
+          <img src="/static/images/heros/kurtrus/hero.png" alt="" style="width: 4rem" />
+            <img src="/static/images/heros/kurtrus/power.png" alt="" style="width: 4rem" />
+
+            <div>
+              <div style="font-size: 15px; margin-top: 2rem; ">[영웅 능력] <br>한 턴에 하수인을 3개 사면 그 하수인들에게 +2/+2 부여합니다.
+                  <br> 한 턴에 하수인을 4개 사면 그 하수인들과 내 손에 있는 하수인들 에게 +2/+2 부여합니다.
+              <br> 한 턴에 하수인을 5개 사면 이번 게임동안 모든 아군 하수인에게 +2/+2 부여합니다.
+              </div>
+
+
+            </div>
+
+          <hr />
+          <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[소개]</h5>
+            <p>버프형 영웅입니다. 버프형 영웅은 우승하긴 어렵고 순방을 목표로 하는 경우가 많습니다.</p>
+            <p>기계 + 가시멧돼지 조합이 순방하기 좋은 조합입니다.</p>
+            <hr />
+             <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[핵심하수인 - 기계 + 가시멧돼지]</h5>
+            <div style="margin-bottom: 2rem;">
+            <img src="/static/images/heros/george/info/mone.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/george/info/mtwo.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/george/info/mthr.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/george/info/mfour.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/george/info/mfive.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/george/info/msix.png" alt=""  class="infoimg"/>
+            </div>
+            <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[핵심하수인 - 혼합]</h5>
+          <img src="/static/images/heros/AFkey/info/bansa.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/AFkey/info/pazi.png" alt=""  class="infoimg"/>
+          <img src="/static/images/heros/AFkey/info/chung.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/AFkey/info/heol.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/AFkey/info/thon.png" alt=""  class="infoimg"/>
+          <img src="/static/images/heros/AFkey/info/bic.png" alt="" class="infoimg"/>
+
+          <hr />
+          <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[운영법]</h5>
+          <p> ▶ 1턴 (3마나) : 하수인 구매 </p>
+          <p> ▶ 2턴 (4마나) : 레벨업 </p>
+          <p> ▶ 3턴 (5마나) : 하수인 구매 + 영웅능력 </p>
+          <p> ▶ 4턴 (6마나) : 하수인 구매 + 하수인 구매 </p>
+          <p> ▶ 5턴 (7마나) : 레벨업 +  하수인 구매 </p>
+             <p> ▶ 6턴 (8마나) : 하수인 구매 +  하수인 구매 </p>
+             <p> ▶ 7턴 (9마나) : 레벨업 +  하수인 구매 </p>
+
+          <p>  정상 마나커브로 운영하며 선술집 3레벨에서 핵심 하수인을 어느정도 찾고  </p>
+          <p> 선술집 4단계에서 지면진동자를 찾아 순방을 기록하는 것이 좋습니다. </p>
+
+        </div>
+      </div>
+    </section>
+
+{% endblock %}

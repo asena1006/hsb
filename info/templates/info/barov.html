@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="container">
+      <div class="dtierlist">
+
+      </div>
+      <div class="buttoncollapse" style="margin-bottom: 1rem">
+        <button
+          type="button"
+          class="btn btn-success btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          3티어
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          나가
+        </button>
+
+      </div>
+
+      <div class="card mb-4">
+        <div class="card-body">
+          <h4 style="font-family: 'IBM Plex Sans KR', sans-serif">[군주 바로브]</h4>
+          <img src="/static/images/heros/barov/hero.png" alt="" style="width: 4rem" />
+            <img src="/static/images/heros/barov/power.png" alt="" style="width: 4rem" />
+
+
+            <div>
+              <div style="font-size: 15px; margin-top: 2rem; ">[영웅 능력] <br> 플레이를 선택합니다 <br> 그 플레이어가 다음 전투에서 승리하면 동전 3개를 내 손으로 가져옵니다. <br>  </div>
+
+
+            </div>
+
+          <hr />
+          <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[소개]</h5>
+            <p>모든 종족이 가능한 영웅입니다.</p>
+            <p>영웅능력으로 잘 맞추면 1티어 못맞추면 가장 안좋은 영웅이 되는 플레이어와 운을 정말 많이 타는 영웅입니다.</p>
+            <p>초보자 분들에게는 추천하기 힘든 영웅입니다. </p>
+            <hr />
+            <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[핵심하수인]</h5>
+            <div style="margin-bottom: 2rem;">
+            <img src="/static/images/heros/tess/info/one.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/tess/info/two.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/tess/info/thr.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/tess/info/our.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/tess/info/f.png" alt=""  class="infoimg"/>
+            <img src="/static/images/heros/tess/info/s.png" alt=""  class="infoimg"/>
+            </div>
+
+
+          <hr />
+          <h5 style="font-family: 'IBM Plex Sans KR', sans-serif">[운영법]</h5>
+          <p> ▶ 1턴 (3마나) : 하수인 구매 </p>
+          <p> ▶ 2턴 (4마나) : 하수인 구매 + 영웅능력 사용 </p>
+          <p> ▶ 3턴 (5마나) : 하수인 구매  + 영웅능력 사용</p>
+          <p> ▶ 4턴 (6마나) : 레벨업 + 하수인 구매 + 영웅능력 사용 </p>
+          <p> ▶ 5턴 (7마나) : 레벨업 + 영웅능력 사용 </p>
+          <p> ▶ 6턴 (8마나) : 레벨업 + 영웅능력 사용 </p>
+          <p> ▶ 7턴 (9마나) : 레벨업 + 영웅능력 사용 </p>
+          <br>
+          <p> 기본적으로 라팜 커브를 타는 것이 좋습니다.  </p>
+          <p> 만약 영웅능력을 잘 못맞춘다면 패스트 업 보다는 천천히 레벨업 하며 필드를 강화해야합니다. </p>
+          <p> 잘 맞춘다면 계속 레벨업 하면서도 하수인을 구매할 수 있습니다. </p>
+
+        </div>
+      </div>
+    </section>
+
+{% endblock %}
