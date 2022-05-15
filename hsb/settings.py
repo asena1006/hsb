@@ -17,7 +17,7 @@ import os
 
 from django.urls import reverse_lazy
 
-from hsb import my_settings
+
 
 env = environ.Env(
     # set casting, default value
@@ -163,13 +163,13 @@ LOGOUT_REDIRECT_URL = reverse_lazy('users:main')   # 로그아웃 후 URL
 AUTH_USER_MODEL = "users.User"       # 커스텀 인증 모델
 
 
-EMAIL_BACKEND = my_settings.EMAIL['EMAIL_BACKEND']
-EMAIL_USE_TLS = my_settings.EMAIL['EMAIL_USE_TLS']
-EMAIL_PORT = my_settings.EMAIL['EMAIL_PORT']
-EMAIL_HOST = my_settings.EMAIL['EMAIL_HOST']
-EMAIL_HOST_USER = my_settings.EMAIL['EMAIL_HOST_USER']
-EMAIL_HOST_PASSWORD = my_settings.EMAIL['EMAIL_HOST_PASSWORD']
-DEFAULT_FROM_MAIL = my_settings.EMAIL['DEFAULT_FROM_MAIL']
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST = 'smtp.naver.com'
+EMAIL_HOST_USER = 'hskanbu0501'
+EMAIL_HOST_PASSWORD = ''
+DEFAULT_FROM_MAIL = 'hskanbu0501'
 
 
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
